@@ -48,7 +48,7 @@
 
 #### **讲解**
 
-1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
+####1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
 -   ​**核心模块**：
     -   ​`quadrotor2_system`：初始化定义飞行器物理特性（质量m、转动惯量J），将输入的推力`F`和力矩`M`通过动力学方程转换为状态变量`state` 
     -   ​`state`：存储和传递状态变量（位置环中的y坐标、z坐标、姿态环的phi角度），形成闭环反馈回路。
@@ -57,11 +57,34 @@
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 2.解析**PID控制器设计**
+#### **1. 整体架构**
 
+-   ​**模型名称**：`quadrotor2_circle/PID控制器`  
+    实现高度（z/y方向）和横滚角（phi）的双闭环控制。
+-   ​**核心模块**：
+    -   ​**PID模块**：包含三组PID控制器，分别处理高度误差（`z_d - z`）、横向位置误差（`y_d - y`）和角度误差（`phi_d - phi`）。
+    -   ​**限幅模块**：对输出推力`F`和力矩`M`进行物理约束（如电机最大推力）。
+    -   ​**加减法模块**：计算期望值与实际状态的误差（`error`信号）。
+
+#### ​**2. 关键参数与设计**
+
+-   ​**控制逻辑**：
+    1.  ​**输入**：期望高度`z_d`、期望横向位置`y_d`（可能图中标注有误，需结合上下文确认）。
+    2.  ​**误差计算**：通过减法模块生成`error`信号。
+    3.  ​**PID调节**：将误差信号转换为控制量（`F`和`M`），并通过限幅模块防止超调。
+    4.  ​**输出**：控制量传递给动态系统模型（第一张图）驱动飞行器。
+-   ​**抗饱和设计**：限幅模块避免控制器输出超出执行器（电机）能力范围。
+
+#### ​**3. 技术含义**
+
+-   ​**双闭环控制**：
+    -   ​**外环**：位置控制（如高度z/y）生成角度期望值。
+    -   ​**内环**：姿态控制（如横滚角phi）快速响应角度变化。
+-   ​**解耦设计**：独立PID控制器处理不同自由度，简化多变量系统控制。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxOTI2NDEzNyw0OTIwMDE0NDcsLTEyNT
-gyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1
-OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
+eyJoaXN0b3J5IjpbNjI0NzczODU2LDQ5MjAwMTQ0NywtMTI1OD
+IxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5
+NywtNTIyNzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
 -->
