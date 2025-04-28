@@ -68,7 +68,6 @@ graph TB
 
 #### ​**3. 技术含义**
 
--   ​**动力学建模**：通过牛顿-欧拉方程描述飞行器的运动（如 `F=ma`、`M=I·α`）。
 -   ​**状态反馈**：`state`模块为控制器提供实时位置和姿态数据，是闭环控制的基础。
 
 
@@ -103,7 +102,7 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTgyNTc1OCwtMTAzNzg0NjUxMiwxNT
+eyJoaXN0b3J5IjpbLTU2OTQyNDk4NywtMTAzNzg0NjUxMiwxNT
 E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
 NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
 01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
