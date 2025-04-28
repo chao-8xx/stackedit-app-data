@@ -56,11 +56,12 @@
 
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
-2.解析**PID控制器设计**，
+2.解析**PID控制器设计**
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NzIwNzQwMSw0OTIwMDE0NDcsLTEyNT
+eyJoaXN0b3J5IjpbLTYxOTI2NDEzNyw0OTIwMDE0NDcsLTEyNT
 gyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1
 OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
 -->
