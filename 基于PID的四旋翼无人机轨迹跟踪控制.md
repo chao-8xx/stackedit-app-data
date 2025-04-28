@@ -102,12 +102,18 @@ graph TB
 
 ![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png "PID控制器")
 
+### **两图协同工作原理**
 
+1.  ​**信号闭环流程**：
+    -   动态系统输出`state`（位置、角度） → PID控制器计算误差 → 生成`F`和`M` → 动态系统响应 → 更新`state`。
+2.  ​**工程实现目标**：
+    -   使四旋翼飞行器跟踪圆形轨迹（`quadrotor2_circle`可能指圆形路径跟踪）。
+    -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMD
-M3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0
-NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LD
-EwMzUwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkw
-NTYxOV19
+eyJoaXN0b3J5IjpbMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3Mj
+U2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOTQy
+Nzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLT
+E1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3
+NTI3MzUsNDQwOTA1NjE5XX0=
 -->
