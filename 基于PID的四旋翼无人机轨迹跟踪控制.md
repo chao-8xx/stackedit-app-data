@@ -90,8 +90,8 @@ graph TB
     1.  ​**输入**：期望高度`z_d`、期望横向位置`y_d`
     2.  ​**误差计算**：通过减法模块生成`error`信号。
     3.  ​**PID调节**：将误差信号转换为控制量（`F`和`M`），并通过限幅模块防止超调。
-    4.  ​**输出**：控制量传递给动态系统模型（第一张图）驱动飞行器。
--   ​**抗饱和设计**：限幅模块避免控制器输出超出执行器（电机）能力范围。
+    4.  ​**输出**：控制量传递给动态系统模型驱动飞行器。
+-   ​**抗饱和设计**：限幅模块避免控制器输出超出电机能力范围。
 
 #### ​**3. 技术含义**
 
@@ -105,8 +105,9 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNT
-E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
-NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
-01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMD
+M3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0
+NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LD
+EwMzUwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkw
+NTYxOV19
 -->
