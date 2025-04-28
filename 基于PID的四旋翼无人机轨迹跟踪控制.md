@@ -87,7 +87,7 @@ graph TB
 #### ​**2. 关键参数与设计**
 
 -   ​**控制逻辑**：
-    1.  ​**输入**：期望高度`z_d`、期望横向位置`y_d`（可能图中标注有误，需结合上下文确认）。
+    1.  ​**输入**：期望高度`z_d`、期望横向位置`y_d`
     2.  ​**误差计算**：通过减法模块生成`error`信号。
     3.  ​**PID调节**：将误差信号转换为控制量（`F`和`M`），并通过限幅模块防止超调。
     4.  ​**输出**：控制量传递给动态系统模型（第一张图）驱动飞行器。
@@ -105,8 +105,8 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzYyNjc2MzgsLTEwMzc4NDY1MTIsMT
-UxNTU5OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIx
-NzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5Ny
-wtNTIyNzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNT
+E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
+NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
+01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 -->
