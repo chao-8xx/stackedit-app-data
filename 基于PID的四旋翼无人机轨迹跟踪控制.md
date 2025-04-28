@@ -40,6 +40,7 @@
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
 
 ### 4. PID控制器
+###
 
 #### **具体图展示**
 
@@ -48,13 +49,13 @@
 
 #### **讲解**
 
-1.首先讲解`state`模块，
+1.首先讲解`state`模块，此模块涉及到了**二维四旋翼动态系统**
 
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNT
-YyNTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUy
-NzM1LDQ0MDkwNTYxOV19
+eyJoaXN0b3J5IjpbODkxNTIyOTgwLC0xMjU4MjE3NDQ1LDMzMT
+ExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC01MjI3Njky
+MTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 -->
