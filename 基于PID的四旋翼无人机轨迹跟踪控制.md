@@ -78,8 +78,8 @@ graph TB
 -   ​**模型名称**：`quadrotor2_circle/PID控制器`  
     实现高度（z/y方向）和横滚角（phi）的双闭环控制。
 -   ​**核心模块**：
-    -   ​**PID模块**：包含两组PID控制器，分别为处理高度误差（`z_d - z`）的姿态环与横向位置误差（`y_d - y`）及角度（`phi`）共同组成的zi
-    -   ​**限幅模块**：对输出推力`F`和力矩`M`进行物理约束（如电机最大推力）。
+    -   ​**PID模块**：包含两组PID控制器，分别为处理高度误差（`z_d - z`）的位置环与横向位置误差（`y_d - y`）及角度（`phi`）共同组成的姿态环
+    -   ​**限幅模块**：对输出推力`F`和力矩`M`进行约束（如电机最大推力）。
     -   ​**加减法模块**：计算期望值与实际状态的误差（`error`信号）。
 
 #### ​**2. 关键参数与设计**
@@ -95,12 +95,12 @@ graph TB
 
 -   ​**双闭环控制**：
     -   ​**外环**：位置控制（如高度z/y）生成角度期望值。
-    -   ​**内环**：姿态控制（如横滚角phi）快速响应角度变化。
+    -   ​**内环**：姿态控制（如横滚角phi）快速响应角度变化进而调整位置。
 -   ​**解耦设计**：独立PID控制器处理不同自由度，简化多变量系统控制。
 
 ![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png "PID控制器")
 
-### **两图协同工作原理**
+### **3.协同工作原理**
 
 1.  ​**信号闭环流程**：
     -   动态系统输出`state`（位置、角度） → PID控制器计算误差 → 生成`F`和`M` → 动态系统响应 → 更新`state`。
@@ -109,10 +109,10 @@ graph TB
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMDkzNjI2NiwtMTEzODI5NTk5NSwxND
-UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
-NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
-0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
-MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MT
-ldfQ==
+eyJoaXN0b3J5IjpbOTkwOTQ2MzA4LC0xMTM4Mjk1OTk1LDE0NT
+A3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2
+NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLT
+EyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUw
+ODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV
+19
 -->
