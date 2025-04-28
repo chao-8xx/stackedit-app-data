@@ -51,14 +51,14 @@
 1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
 -   ​**核心模块**：
     -   ​`quadrotor2_system`：初始化定义飞行器物理特性（质量m、转动惯量J），将输入的推力`F`和力矩`M`通过动力学方程转换为状态变量`state` 
-    -   ​`state`：存储和传递状态变量（y坐标、phi角度），形成闭环反馈回路。
+    -   ​`state`：存储和传递状态变量（位置环中的y坐标、z坐标、姿态环的phi角度），形成闭环反馈回路。
     -   ​**输入输出**：通过输入模块`力F`和`力矩M`驱动系统，输出飞行器的实时状态（如位置、姿态）。
 
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjY5NDUxNSwtMTI1ODIxNzQ0NSwzMz
-ExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5
-MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbNDkyMDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMT
+ExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC01MjI3Njky
+MTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 -->
