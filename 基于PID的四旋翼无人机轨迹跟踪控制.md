@@ -98,10 +98,10 @@
     -   ​**内环**：姿态控制（如横滚角phi）快速响应角度变化。
 -   ​**解耦设计**：独立PID控制器处理不同自由度，简化多变量系统控制。
 
-
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114302702848615&bvid=BV1PPdWY9E6p&cid=29304819052&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTU5OTk3NywxMzUwOTQyNzc5LDQ5Mj
-AwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1
-OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3NTI3MzUsND
-QwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMz
+UwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3
+ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC
+02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
 -->
