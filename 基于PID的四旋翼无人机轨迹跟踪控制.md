@@ -43,7 +43,8 @@
 
 ### **讲解**
 
-1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
+### 1.讲解**二维四旋翼动态系统**
+
 #### **1. 整体架构**
 
 -   ​**模型名称**：`quadrotor2_circle/二维四旋翼动态系统`  
@@ -70,7 +71,7 @@ graph TB
 
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png "状态变量state")
 
-2.解析**PID控制器设计**
+### 2.解析**PID控制器设计**
 
 #### **1. 整体架构**
 
@@ -108,7 +109,7 @@ graph TB
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODA5MDI1OTcsMTQ1MDc0NjgwMiwxMT
+eyJoaXN0b3J5IjpbLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMT
 c2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5
 OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NS
 wzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIy
