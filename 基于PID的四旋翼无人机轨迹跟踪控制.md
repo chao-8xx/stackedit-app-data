@@ -41,18 +41,19 @@
 
 ### 4. PID控制器
 
-#### 
+#### **具体图展示**
 
 
 ![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png)
 
+#### **讲解**
 
 
-![输入图片说明](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
+![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTE0Mjc0MiwtMTU2MjUzNzU5NiwxMD
+eyJoaXN0b3J5IjpbLTQ3MzI2NzAwNiwtMTU2MjUzNzU5NiwxMD
 M1MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2
 MTldfQ==
 -->
