@@ -19,11 +19,12 @@
 ![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png)
 
 - 也可以通过Fcn模块自己写函数式来定义轨迹的形状，较为推荐此方式来进行轨迹的生成
+
 #### ​讲解： **核心模块解析**
 
 #### ​**1. 正弦信号源模块**
 
--   ​**模块1**：`5*sin(u)
+-   ​**模块1**：`5*sin(u)`
     -   ​**功能**：生成振幅为5、频率与输入`u`相关的正弦波信号。
     -   ​**输出**：通过连线连接到输出端口`Y`（对应右侧的`yfn`信号线）。
 -   ​**模块2**：`5*sin(0.5*u)`
@@ -36,6 +37,6 @@
 
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwMDg4NjM1LC01MjI3NjkyMTAsLTYzMT
-c1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02Mz
+E3NTI3MzUsNDQwOTA1NjE5XX0=
 -->
