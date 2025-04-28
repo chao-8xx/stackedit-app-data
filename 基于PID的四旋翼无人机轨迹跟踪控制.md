@@ -126,11 +126,157 @@ graph TD
     -   使四旋翼飞行器在二维空间内以圆形轨迹运动。
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
 
+
+
+
+```
+function draw_quadrotor_2D(t, position, angle, traj)
+
+% 闲鱼：一只小鲤鱼鸭
+
+% B站： 芜胡起Fly
+
+% 输入参数：
+
+% t: 时间[n*1]
+
+% position: (y, z)位置[n*2]
+
+% angle: 角度[n*1]
+
+% traj: (y, z)参考轨迹[n*2]
+
+%% 坐标轴属性设置
+
+fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
+
+ax=axes;
+
+axis equal;
+
+if nargin < 3
+
+fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
+
+return;
+
+end
+
+if nargin > 3
+
+% 跟踪轨迹
+
+plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
+
+end
+
+y_lim_max = ceil(max(position(:,1))) + 2;
+
+y_lim_min = floor(min(position(:,1))) - 2;
+
+z_lim_max = ceil(max(position(:,2))) + 2;
+
+z_lim_min = floor(min(position(:,2))) - 2;
+
+set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','on',...
+
+'Xlim',[y_lim_min y_lim_max],'Ylim',[z_lim_min z_lim_max],...
+
+'XTick',y_lim_min:1:y_lim_max,'YTick',z_lim_min:1:z_lim_max);
+
+title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
+
+xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
+
+ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
+
+Quadrotor.L = 0.5; % 机臂长度
+
+Quadrotor.H = 0.2; % 电机高度
+
+Quadrotor.W = 0.15; % 螺旋桨半径
+
+%% 定义构建四旋翼的关键坐标点
+
+Quadrotor_Body = [Quadrotor.L 0 1;
+
+-Quadrotor.L 0 1;
+
+Quadrotor.L Quadrotor.H 1;
+
+-Quadrotor.L Quadrotor.H 1;
+
+Quadrotor.L+Quadrotor.W Quadrotor.H 1;
+
+Quadrotor.L-Quadrotor.W Quadrotor.H 1;
+
+-Quadrotor.L+Quadrotor.W Quadrotor.H 1;
+
+-Quadrotor.L-Quadrotor.W Quadrotor.H 1 ]'; % 注意这里是转置
+
+line = plot(ax,0,0,'-r','LineWidth',2); % 四旋翼实际轨迹
+
+h1 = plot(ax,0,0,'-b.','LineWidth',2,'MarkerSize',2); % 机臂
+
+h2 = plot(ax,0,0,'-b','LineWidth',2); % 电机1
+
+h3 = plot(ax,0,0,'-b','LineWidth',2); % 电机2
+
+h4 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨1
+
+h5 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨2
+
+legend("参考轨迹","实际轨迹");
+
+for i = 1:1:size(t)
+
+% 获取四旋翼位置和姿态
+
+quadrotor_pos = position(i,:)';
+
+phi=angle(i);
+
+% 2D旋转矩阵
+
+R = [cos(phi) sin(phi);
+
+-sin(phi) cos(phi)];
+
+% 通过把四旋翼在机体坐标系下的关键点变换到地球坐标系下
+
+% 用于画四旋翼在地球坐标系下的真实姿态
+
+wHb = [R quadrotor_pos;
+
+0 0 1];
+
+quadrotor_world = wHb * Quadrotor_Body; % [3x3][3x8]
+
+quadrotor_atti = quadrotor_world(1:2, :);
+
+% 四旋翼画图
+
+set(h1,'Xdata',quadrotor_atti(1,[1 2]), 'Ydata',quadrotor_atti(2,[1 2])); % 机臂
+
+set(h2,'Xdata',quadrotor_atti(1,[1 3]), 'Ydata',quadrotor_atti(2,[1 3])); % 电机1
+
+set(h3,'Xdata',quadrotor_atti(1,[4 2]), 'Ydata',quadrotor_atti(2,[4 2])); % 电机2
+
+set(h4,'Xdata',quadrotor_atti(1,[5 6]), 'Ydata',quadrotor_atti(2,[5 6])); % 螺旋桨1
+
+set(h5,'Xdata',quadrotor_atti(1,[7 8]), 'Ydata',quadrotor_atti(2,[7 8])); % 螺旋桨2
+
+set(line,'Xdata',position(1:i,1),'Ydata',position(1:i,2)); % 四旋翼轨迹
+
+drawnow;
+
+end
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMDIyNjQ5MCwtMTEzODI5NTk5NSwxND
-UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
-NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
-0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
-MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MT
-ldfQ==
+eyJoaXN0b3J5IjpbMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMT
+M4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3
+OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OS
+w0OTIwMDE0NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYy
+NTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNz
+M1LDQ0MDkwNTYxOV19
 -->
