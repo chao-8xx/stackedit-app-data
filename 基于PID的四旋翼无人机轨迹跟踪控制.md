@@ -12,13 +12,13 @@
 
 ### 3. 轨迹生成
 
-- 一般的轨迹都是以正弦波的形式来生成的，即为simulink里的Sine Wave模块生成，只需要Sine Wave正弦波模块、Outpart输出模块、Mux模块与To Workspace模块，较为简单
+- 一般的轨迹都是以正弦波的形式来生成的，即为simulink里的Sine Wave模块生成，只需要Sine Wave正弦波模块、Outpart输出模块、Mux模块与To Workspace模块，较为简单。
 
 如下图展示：
 
 ![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png)
 
-- 也可以通过Fcn模块自己写函数式来定义轨迹的形状，较为推荐此方式来进行轨迹的生成
+- 也可以通过Fcn模块自己写函数式来定义轨迹的形状，较为推荐此方式来进行轨迹的生成。
 
 #### ​讲解： 
 #### **核心模块解析**
@@ -30,7 +30,7 @@
     -   ​**输出**：通过连线连接到输出端口`Y`（对应右侧的`y_fcn`信号线）。
 -   ​**模块2**：`5*sin(0.5*u)`
     -   ​**功能**：生成振幅为5、频率为`0.5*u`的正弦波（频率是模块1的一半）。
-    -   ​**输出**：通过连线连接到输出端口`Z`（对应右侧的`z fcn`信号线）。
+    -   ​**输出**：通过连线连接到输出端口`Z`（对应右侧的`z_fcn`信号线）。
 
 #### ​**2. 输出端口**
 
@@ -38,6 +38,6 @@
 
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDA2MTgxOSwxMDM1MDgxNTk3LC01Mj
-I3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbLTE0NzQzNzQwNTAsMTAzNTA4MTU5NywtNT
+IyNzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
 -->
