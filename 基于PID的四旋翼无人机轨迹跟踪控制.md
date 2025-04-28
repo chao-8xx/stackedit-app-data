@@ -37,12 +37,12 @@
 
 -   ​**Y和Z**：将两个正弦信号输出到工作空间或外部设备，便于后续分析（可用Scope模块观测波形）。
 
-如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
+如下图展示：![PID控制器](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png "PID控制器")
 
 ### 4. PID控制器与二维四旋翼动态系统
 
 #### **具体图展示**
-![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png )
+![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png "PID控制器")
 
 #### **讲解**
 
@@ -72,7 +72,7 @@ graph TB
 -   ​**状态反馈**：`state`模块为控制器提供实时位置和姿态数据，是闭环控制的基础。
 
 
-![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
+![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png "状态变量state")
 
 2.解析**PID控制器设计**
 
@@ -103,8 +103,8 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTQ0ODE3MSwtMTAzNzg0NjUxMiwxNT
-E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
-NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
-01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbMjkzODg2OTU5LC0xMDM3ODQ2NTEyLDE1MT
+U1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMTc0
+NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcsLT
+UyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
 -->
