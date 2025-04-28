@@ -48,12 +48,12 @@
 
 #### **讲解**
 
-1.首先讲解``
+1.首先讲解`sta`
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMz
-UwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYx
-OV19
+eyJoaXN0b3J5IjpbMTc5MzAzOTgwNiwzMzExMTg3ODYsLTE1Nj
+I1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3NTI3
+MzUsNDQwOTA1NjE5XX0=
 -->
