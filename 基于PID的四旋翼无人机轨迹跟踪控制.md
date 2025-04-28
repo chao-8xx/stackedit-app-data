@@ -5,7 +5,7 @@
 ## 二维笔记说明
 
  ### 1. 展示二维平面四旋翼圆形轨迹跟踪（以其为例）
- ![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png)
+ ![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png "基于PID的二维平面四旋翼圆形轨迹跟踪")
 
 ### 2.状态方程解读
 
@@ -16,7 +16,7 @@
 
 如下图展示：
 
-![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png)
+![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png "轨迹生成 （1）")
 
 2. 也可以通过**Fcn模块**自己写函数式来定义轨迹的形状，较为推荐此方式来进行轨迹的生成。
 
@@ -37,7 +37,7 @@
 
 -   ​**Y和Z**：将两个正弦信号输出到工作空间或外部设备，便于后续分析（可用Scope模块观测波形）。
 
-如下图展示：![PID控制器](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png "PID控制器")
+如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png "轨迹生成 （2）")
 
 ### 4. PID控制器与二维四旋翼动态系统
 
@@ -103,8 +103,8 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzODg2OTU5LC0xMDM3ODQ2NTEyLDE1MT
-U1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMTc0
-NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcsLT
-UyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
+eyJoaXN0b3J5IjpbMTMxNDUyMjU0NywtMTAzNzg0NjUxMiwxNT
+E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
+NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
+01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 -->
