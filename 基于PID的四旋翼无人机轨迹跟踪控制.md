@@ -39,8 +39,7 @@
 
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
 
-### 4. PID控制器
-###
+### 4. PID控制器与二维四旋翼动态系统
 
 #### **具体图展示**
 
@@ -49,13 +48,17 @@
 
 #### **讲解**
 
-1.首先讲解`state`模块，此模块涉及到了**二维四旋翼动态系统**
+1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
+-   ​**核心模块**：
+    -   ​**`quadrotor2_system`**：定义飞行器物理特性（质量、转动惯量），将输入的推力`F`和力矩`M`通过动力学方程转换为状态量（如位置、角度）。
+    -   ​**`state`模块**：存储和传递状态变量（如y坐标、phi角度），形成闭环反馈回路。
+    -   ​**输入输出**：通过`力F`和`力矩M`驱动系统，输出飞行器的实时状态（如位置、姿态）。
 
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNTIyOTgwLC0xMjU4MjE3NDQ1LDMzMT
-ExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC01MjI3Njky
-MTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbLTEzMTE3MzkxMjAsLTEyNTgyMTc0NDUsMz
+MxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2
+OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
 -->
