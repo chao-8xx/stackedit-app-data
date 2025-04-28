@@ -52,7 +52,7 @@
 #### **1. 整体架构**
 
 -   ​**模型名称**：`quadrotor2_circle/二维四旋翼动态系统`  
-    专注于二维平面内四旋翼飞行器的动力学行为仿真。
+    专注于二维平面内四旋翼飞行器的动力学行为仿真
 -   ​**核心模块**：
     -   ​`quadrotor2_system`：初始化定义飞行器物理特性（质量m、转动惯量J），将输入的推力`F`和力矩`M`通过动力学方程转换为状态变量`state` 
     -   ​`state`：存储和传递状态变量（位置环中的y坐标、z坐标、姿态环的phi角度），形成闭环反馈回路。
@@ -60,11 +60,8 @@
 
 #### ​**2. 关键参数与设计**
 
--   ​**仿真设置**：
-    -   ​**停止时间=20秒**：仿真总时长为20秒，适用于观察动态系统的稳态响应。
-    -   ​**求解器`ode45`**：采用变步长Runge-Kutta算法，适合求解非线性动力学方程。
 -   ​**信号流逻辑**：
-    -   输入力/力矩 → 动力学方程计算（`quadrotor2_system`） → 输出状态变量 → 反馈至控制器（第二张图）形成闭环。
+    -   输入力/力矩 → 动力学方程计算（`quadrotor2_system`） → 输出状态变量 → 反馈至控制器形成闭环。
 
 #### ​**3. 技术含义**
 
@@ -103,8 +100,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDgxOTU0MTAsNDkyMDAxNDQ3LC0xMj
-U4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgx
-NTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ
-==
+eyJoaXN0b3J5IjpbMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNT
+gyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1
+OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
 -->
