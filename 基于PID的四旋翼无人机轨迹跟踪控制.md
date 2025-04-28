@@ -100,8 +100,29 @@ graph TB
 
 ![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png "PID控制器")
 
-### **3.协同工作原理**
+### **3.二者协同工作原理**
+信号闭环流程可以用流程图的形式来表示。以下是一个简单的流程图，展示动态系统输出`state`，PID控制器计算误差，生成`F`和`M`，动态系统响应，最后更新`state`的过程。
 
+```mermaid
+graph TD
+    A(开始) --> B[动态系统输出state<br>（位置、角度）]
+    B --> C[PID控制器计算误差]
+    C --> D[生成F和M]
+    D --> E[动态系统响应]
+    E --> F[更新state]
+    F --> G[回到步骤B]
+```
+
+在这个流程图中：
+- **开始**：流程的起点。
+- **动态系统输出state**：动态系统输出其当前的状态，包括位置、角度等。
+- **PID控制器计算误差**：控制器根据目标值和实际输出计算误差。
+- **生成F和M**：基于计算出的误差，控制器生成控制信号`F`和`M`。
+- **动态系统响应**：动态系统接收控制信号并作出响应。
+- **更新state**：系统状态更新，根据响应结果更新位置、角度等。
+- **回到步骤B**：循环回到动态系统输出state，形成一个闭环控制。
+
+这个流程图简洁地展示了信号闭环控制的基本步骤，帮助理解整个控制回路的工作流程。
 1.  ​**信号闭环流程**：
     -   动态系统输出`state`（位置、角度） → PID控制器计算误差 → 生成`F`和`M` → 动态系统响应 → 更新`state`。
 2.  ​**工程实现目标**：
@@ -109,10 +130,10 @@ graph TB
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkwOTQ2MzA4LC0xMTM4Mjk1OTk1LDE0NT
-A3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2
-NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLT
-EyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUw
-ODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV
-19
+eyJoaXN0b3J5IjpbMjEyNjc5MjYzNSwtMTEzODI5NTk5NSwxND
+UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
+NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
+0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
+MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MT
+ldfQ==
 -->
