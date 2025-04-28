@@ -44,7 +44,7 @@
 #### **具体图展示**
 
 
-![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png “PID控制器”)
+![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png )
 
 #### **讲解**
 
@@ -100,7 +100,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1MDA1MTA1MCwxMzUwOTQyNzc5LDQ5Mj
+eyJoaXN0b3J5IjpbMTUxNTU5OTk3NywxMzUwOTQyNzc5LDQ5Mj
 AwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1
 OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3NTI3MzUsND
 QwOTA1NjE5XX0=
