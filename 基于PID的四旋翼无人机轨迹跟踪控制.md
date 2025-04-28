@@ -42,8 +42,6 @@
 ### 4. PID控制器与二维四旋翼动态系统
 
 #### **具体图展示**
-
-
 ![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png )
 
 #### **讲解**
@@ -103,9 +101,9 @@ graph TB
     -   ​**内环**：姿态控制（如横滚角phi）快速响应角度变化。
 -   ​**解耦设计**：独立PID控制器处理不同自由度，简化多变量系统控制。
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114302702848615&bvid=BV1PPdWY9E6p&cid=29304819052&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTIyNjA5OCwtMTAzNzg0NjUxMiwxNT
+eyJoaXN0b3J5IjpbMTQ2OTQ0ODE3MSwtMTAzNzg0NjUxMiwxNT
 E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
 NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
 01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
