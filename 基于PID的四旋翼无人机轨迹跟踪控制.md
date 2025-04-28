@@ -106,12 +106,12 @@ graph TB
   ```mermaid
 graph TD
     A(开始)
-    B(测量状态s)
-    C(计算误差)
+    B(测量状态 state)
+    C(计算误差 error)
     D(生成控制信号)
     E(动态系统响应)
-    F(更新状态)
-    G(回到计算误差)
+    F(更新状态 state)
+    G(回到计算误差 error)
     
     A --> B
     B --> C
@@ -123,11 +123,11 @@ graph TD
 ```
 
 2.  ​**工程实现目标**：
-    -   使四旋翼飞行器跟踪圆形轨迹（`quadrotor2_circle`可能指圆形路径跟踪）。
+    -   使四旋翼飞行器在erwei跟踪圆形轨迹。
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzU4MDk4NCwtMTEzODI5NTk5NSwxND
+eyJoaXN0b3J5IjpbMTczNTI4OTg0MywtMTEzODI5NTk5NSwxND
 UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
 NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
 0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
