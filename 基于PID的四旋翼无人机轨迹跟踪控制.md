@@ -55,29 +55,18 @@
     专注于二维平面内四旋翼飞行器的动力学行为仿真
 -   ​**核心模块**：
     -   ​`quadrotor2_system`：初始化定义飞行器物理特性（质量m、转动惯量J），将输入的推力`F`和力矩`M`通过动力学方程转换为状态变量`state` 
-    -   ​`state`：存储和传递状态变量（位置环中的y坐标、z坐```mermaid
-```mermaid
-graph TB
-    A[输入力/力矩] -->|动力学方程计算| B(quadrotor2_system)
-    B -->|输出状态变量| C[反馈至控制器]
-    C -.->|形成闭环| A
-```
-
-这个流程图展示了信号流逻辑的步骤：
-
-1. 从输入力/力矩开始。
-2. 进入`quadrotor2_system`进行动力学方程计算。
-3. 输出状态变量。
-4. 将状态变量反馈至控制器。
-5. 在控制器中形成闭环，控制器根据反馈的状态变量调整输入力/力矩，以便实现期望的动态行为。
-
-整个流程是一个循环过程，控制器不断根据系统的状态变量调整输入，以实现系统的稳定和精确控制。标、姿态环的phi角度），形成闭环反馈回路。
+    -   ​`state`：存储和传递状态变量（位置环中的y坐标、z坐标、姿态环的phi角度），形成闭环反馈回路。
     -   ​**输入输出**：通过输入模块`力F`和`力矩M`驱动系统，输出飞行器的实时状态（如位置、姿态）。
 
 #### ​**2. 关键参数与设计**
 
 -   ​**信号流逻辑**：
-    -   输入力/力矩 → 动力学方程计算（`quadrotor2_system`） → 输出状态变量 → 反馈至控制器形成闭环。
+  ```mermaid
+graph TB
+    A[输入力F/力矩M] -->|动力学方程计算| B(quadrotor2_system)
+    B -->|输出状态变量state| C[反馈至控制器]
+    C -.->|形成闭环| A
+```
 
 #### ​**3. 技术含义**
 
@@ -116,7 +105,7 @@ graph TB
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114302702848615&bvid=BV1PPdWY9E6p&cid=29304819052&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDU1MzUwNywtMTAzNzg0NjUxMiwxNT
+eyJoaXN0b3J5IjpbMTY3NTIyNjA5OCwtMTAzNzg0NjUxMiwxNT
 E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
 NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
 01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
