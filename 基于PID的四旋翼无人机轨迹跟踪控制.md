@@ -48,12 +48,12 @@
 
 #### **讲解**
 
-
+1.首先讲解``
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzI2NzAwNiwtMTU2MjUzNzU5NiwxMD
-M1MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2
-MTldfQ==
+eyJoaXN0b3J5IjpbMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMz
+UwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYx
+OV19
 -->
