@@ -48,12 +48,13 @@
 
 #### **讲解**
 
-1.首先讲解`sta`
+1.首先讲解`state`模块，
+
 ![状态变量state](/imgs/2025-04-29/7dZkCcUQ3FJglUzR.png)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzAzOTgwNiwzMzExMTg3ODYsLTE1Nj
-I1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3NTI3
-MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNT
+YyNTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2OTIxMCwtNjMxNzUy
+NzM1LDQ0MDkwNTYxOV19
 -->
