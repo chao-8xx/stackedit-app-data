@@ -41,10 +41,7 @@
 
 ### 4. PID控制器与二维四旋翼动态系统
 
-#### **具体图展示**
-![PID控制器](/imgs/2025-04-29/mieRgVuCIm2K7Tda.png "PID控制器")
-
-#### **讲解**
+### **讲解**
 
 1.首先讲解**二维四旋翼动态系统**，此模块定义了`state`模块的具体含义。
 #### **1. 整体架构**
@@ -111,9 +108,9 @@ graph TB
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3Mj
-U2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOTQy
-Nzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLT
-E1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5MjEwLC02MzE3
-NTI3MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbLTE4ODA5MDI1OTcsMTQ1MDc0NjgwMiwxMT
+c2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5
+OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NS
+wzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIy
+NzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
 -->
