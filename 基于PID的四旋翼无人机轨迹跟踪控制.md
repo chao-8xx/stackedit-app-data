@@ -62,7 +62,7 @@
   ```mermaid
 graph TB
     A[输入力F/力矩M] -->|动力学方程计算| B(quadrotor2_system)
-    B -->|输出状态变量state| C[反馈至控制器]
+    B -->|输出状态变量state| C[反馈至PID控制器]
     C -.->|形成闭环| A
 ```
 
@@ -103,7 +103,7 @@ graph TB
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDUyMjU0NywtMTAzNzg0NjUxMiwxNT
+eyJoaXN0b3J5IjpbMTMwNTgyNTc1OCwtMTAzNzg0NjUxMiwxNT
 E1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3
 NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC
 01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
