@@ -16,9 +16,9 @@
 
 ![轨迹生成](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png)
 
-- 但也可以
+- 也可以通过Fcn模块自己写函数式来定义轨迹的形状，较为推荐cif
 ### 4.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDA2ODEzNiwtNjMxNzUyNzM1LDQ0MD
-kwNTYxOV19
+eyJoaXN0b3J5IjpbLTE1NjUwMTUwMjQsLTYzMTc1MjczNSw0ND
+A5MDU2MTldfQ==
 -->
