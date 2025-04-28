@@ -4,8 +4,9 @@
 
 ## 二维笔记说明
 
- 1. 展示erwei
+ 1. 展示二维平面四旋翼圆形轨迹跟踪
+ ![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODUxNTc5LDQ0MDkwNTYxOV19
+eyJoaXN0b3J5IjpbLTY3NzExMjg2Nyw0NDA5MDU2MTldfQ==
 -->
