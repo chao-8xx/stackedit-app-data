@@ -12,7 +12,7 @@
 
 ### 3. 轨迹生成
 
-- 一般的轨迹都是以正弦波的形式来生成的，即为simulink里的**Sine Wave模块生成，只需要**Sine Wave正弦波模块**、**Outpart输出模块**、**Mux模块**与**To Workspace模块**，较为简单。
+- 一般的轨迹都是以正弦波的形式来生成的，即为simulink里的**Sine Wave**模块生成，只需要**Sine Wave正弦波模块**、**Outpart输出模块**、**Mux模块**与**To Workspace模块**，较为简单。
 
 如下图展示：
 
@@ -37,7 +37,10 @@
 -   ​**Y和Z**：将两个正弦信号输出到工作空间或外部设备，便于后续分析（可用Scope模块观测波形）。
 
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png)
+
+### 4. PID控制器
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNTg0MzUwMywxMDM1MDgxNTk3LC01Mj
-I3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbNDcyNDIyMzk4LDEwMzUwODE1OTcsLTUyMj
+c2OTIxMCwtNjMxNzUyNzM1LDQ0MDkwNTYxOV19
 -->
