@@ -12,7 +12,7 @@
 
 ### 3. 轨迹生成
 
-一般的轨迹都是以zhang
+一般的轨迹都是以正弦波的形式来生成的，即为simulink里的Sine Wave模块生成
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ1MDM5NzcsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 -->
