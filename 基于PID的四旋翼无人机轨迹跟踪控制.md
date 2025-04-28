@@ -78,7 +78,7 @@ graph TB
 -   ​**模型名称**：`quadrotor2_circle/PID控制器`  
     实现高度（z/y方向）和横滚角（phi）的双闭环控制。
 -   ​**核心模块**：
-    -   ​**PID模块**：包含两组PID控制器，分别处理位置环高度误差（`z_d - z`）与横向位置误差（`y_d - y`）角度误差（`phi_d - phi`）
+    -   ​**PID模块**：包含两组PID控制器，分别为处理高度误差（`z_d - z`）的姿态环与横向位置误差（`y_d - y`）及角度（`phi`）共同组成的zi
     -   ​**限幅模块**：对输出推力`F`和力矩`M`进行物理约束（如电机最大推力）。
     -   ​**加减法模块**：计算期望值与实际状态的误差（`error`信号）。
 
@@ -109,7 +109,7 @@ graph TB
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MTkzMzQyNywtMTEzODI5NTk5NSwxND
+eyJoaXN0b3J5IjpbMTkxMDkzNjI2NiwtMTEzODI5NTk5NSwxND
 UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
 NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
 0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
