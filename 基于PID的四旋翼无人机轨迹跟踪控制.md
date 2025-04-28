@@ -123,11 +123,11 @@ graph TD
 ```
 
 2.  ​**工程实现目标**：
-    -   使四旋翼飞行器在erwei跟踪圆形轨迹。
+    -   使四旋翼飞行器在二维空间内以圆形轨迹。
     -   通过PID参数整定（如比例系数、积分时间）优化动态响应（如超调量、稳态误差）。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTI4OTg0MywtMTEzODI5NTk5NSwxND
+eyJoaXN0b3J5IjpbMTY1NDc2Mjg1MiwtMTEzODI5NTk5NSwxND
 UwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0
 NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC
 0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1
