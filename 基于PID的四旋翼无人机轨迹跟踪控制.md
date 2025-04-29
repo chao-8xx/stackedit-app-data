@@ -229,11 +229,10 @@ z_lim_min = floor(min(position(:,2))) - 2;
 set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','on',...
 %% “looseinset = get(ax, 'tightinset')”：消除坐标轴与图形窗口之间的多余空白，使绘图区域最大化
 %% “nextplot = 'add'”：允许后续绘图（如轨迹线）叠加在当前坐标轴上，避免覆盖已有内容
-
+%% “XGrid = 'on', YGrid = 'on'”：显示网格线
 'Xlim',[y_lim_min y_lim_max],'Ylim',[z_lim_min z_lim_max],...
 'XTick',y_lim_min:1:y_lim_max,'YTick',z_lim_min:1:z_lim_max);
 %% “XTick = y_lim_min:1:y_lim_max“：将 y 轴刻度设为 1 米间隔，z轴同理
-%% “XGrid = 'on', YGrid = 'on'”：显示网格线
 
 %% 坐标标签与标题美化
 title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
@@ -250,7 +249,6 @@ Quadrotor.W = 0.15;
 % 螺旋桨半径
 
 %% 定义构建四旋翼的关键坐标点
-
 Quadrotor_Body = [Quadrotor.L 0 1;
 
 -Quadrotor.L 0 1;
@@ -328,11 +326,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTQ3NTc3LDI4NzA4MDExMSw0NDczNz
-I0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwt
-MTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MD
-gyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMy
-ODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC
-0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1
-NjQ3OTE0XX0=
+eyJoaXN0b3J5IjpbMTUxNzQxOTcyMywyODcwODAxMTEsNDQ3Mz
+cyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIs
+LTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02Nz
+A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
+MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
+wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
+NTY0NzkxNF19
 -->
