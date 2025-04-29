@@ -242,10 +242,11 @@ xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 
 Quadrotor.L = 0.5; 
-% 机臂长度
-Quadrotor.H = 0.2; % 电机高度
-
-Quadrotor.W = 0.15; % 螺旋桨半径
+% 机臂长度（左右对称）
+Quadrotor.H = 0.2;
+% 电机相对于机臂的高度
+Quadrotor.W = 0.15; 
+% 螺旋桨半径
 
 %% 定义构建四旋翼的关键坐标点
 
@@ -326,11 +327,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Mzk5MjAwMSwxMjM0NTYxMzQzLDM2Mj
-cyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYw
-MzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC
-0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2
-MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0Nj
-gwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIs
-MTUxNTU5OTk3N119
+eyJoaXN0b3J5IjpbNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNz
+IyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAz
+NiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLT
+E2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYw
+MjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2OD
+AyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwx
+NTE1NTk5OTc3XX0=
 -->
