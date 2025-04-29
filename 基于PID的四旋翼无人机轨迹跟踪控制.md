@@ -26,27 +26,40 @@
 
 ----------
 
-4.  ​**v˙y​=mFsinϕ​​**
-    
-    -   ​**物理意义**：y方向加速度由推力的水平分量产生
-    -   ​**关键参数**：
-        -   FFF：旋翼总推力（控制输入）
-        -   ϕ\phiϕ：俯仰角（推力方向控制）
-        -   mmm：四旋翼质量
-    -   ​**动力学层级**：平移动力学方程（牛顿第二定律）
-5.  ​​**v˙z​=mFcosϕ​−g**
-    
-    -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
-    -   ​**关键参数**：
-        -   ggg：重力加速度（向下作用）
-    -   ​**动力学层级**：平移动力学方程（含重力补偿）
-6.  ​**ω˙=−J1​M**
-    
-    -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
-    -   ​**关键参数**：
-        -   M：力矩（控制输入）
-        -   J：转动惯量
-    -   ​**动力学层级**：刚体力学方程（角动量定理）
+```latex
+\[
+\dot{v}_y = \frac{F \sin(\phi)}{m}
+\]
+物理意义：\( y \)方向加速度由推力的水平分量产生。
+
+关键参数：
+\( F \)：旋翼总推力（控制输入）
+\( \phi \)：俯仰角（推力方向控制）
+\( m \)：四旋翼质量
+
+动力学层级：平移动力学方程（牛顿第二定律）
+
+\[
+\dot{v}_z = \frac{F \cos(\phi)}{m} - g
+\]
+物理意义：\( z \)方向加速度由推力的垂直分量减去重力加速度。
+
+关键参数：
+\( g \)：重力加速度（向下作用）
+
+动力学层级：平移动力学方程（含重力补偿）
+
+\[
+\dot{\omega} = -\frac{M}{J}
+\]
+物理意义：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反。
+
+关键参数：
+\( M \)：力矩（控制输入）
+\( J \)：转动惯量
+
+动力学层级：旋转动力学方程（角动量定理）
+```
 
 ### 3. 轨迹生成
 
@@ -54,7 +67,54 @@
 
 如下图展示：
 
-![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png "轨迹生成 （1）")
+这段 LaTeX 代码描述了一个四旋翼飞行器的动力学方程，包括其平移动力学和旋转动力学方程。下面是代码中各部分的解释：
+
+### 平移动力学方程
+1. **\( y \)方向加速度**：
+
+   ```
+   \[
+   \dot{v}_y = \frac{F \sin(\phi)}{m}
+   \]
+   ```
+   - **物理意义**：四旋翼飞行器在 \( y \) 方向上的加速度是由于推力的水平分量产生的。
+   - **关键参数**：
+     - \( F \)：旋翼总推力（控制输入）
+     - \( \phi \)：俯仰角（推力方向控制）
+     - \( m \)：四旋翼质量
+
+   - **动力学层级**：这是基于牛顿第二定律的平移动力学方程。
+
+2. **\( z \)方向加速度**：
+
+   ```
+   \[
+   \dot{v}_z = \frac{F \cos(\phi)}{m} - g
+   \]
+   ```
+   - **物理意义**：四旋翼飞行器在 \( z \) 方向上的加速度是由推力的垂直分量减去重力加速度产生的。
+   - **关键参数**：
+     - \( g \)：重力加速度（向下作用）
+
+   - **动力学层级**：这是包含重力补偿的平移动力学方程。
+
+### 旋转动力学方程
+1. **角加速度**：
+
+   ```
+   \[
+   \dot{\omega} = -\frac{M}{J}
+   \]
+   ```
+   - **物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反。
+   - **关键参数**：
+     - \( M \)：力矩（控制输入）
+     - \( J \)：转动惯量
+
+   - **动力学层级**：这是基于角动量定理的旋转动力学方程。
+
+### 总结
+这段代码包含了四旋翼飞行器的基本动力学方程，包括俯仰角控制下的推力对加速度的影响，以及力矩对角加速度的影响。这些方程是理解和设计四旋翼飞行器控制系统的基础。![轨迹生成 （1）](/imgs/2025-04-29/pFWBZW8TqOlMpRLl.png "轨迹生成 （1）")
 
 2. 也可以通过**Fcn模块**自己写函数式来定义轨迹的形状，较为推荐此方式来进行轨迹的生成。
 
@@ -311,11 +371,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMT
-A4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIy
-NjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1Mj
-UsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEz
-NTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExOD
-c4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC01MjI3NjkyMTAs
-LTYzMTc1MjczNV19
+eyJoaXN0b3J5IjpbMTk4MjgzMjc3OSwtMTI3Njk0NTA3NywtMT
+YzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAy
+NTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MD
+IsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1
+MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMT
+c0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcs
+LTUyMjc2OTIxMF19
 -->
