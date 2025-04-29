@@ -233,6 +233,7 @@ set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','
 
 'XTick',y_lim_min:1:y_lim_max,'YTick',z_lim_min:1:z_lim_max);
 
+%% 坐标标签与标题美化
 title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
 
 xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
@@ -325,11 +326,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MzQzMjA0OCw0NDczNzI0NTUsMTIzND
-U2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0
-NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMT
-I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
-MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OT
-k1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0x
-MDM3ODQ2NTEyXX0=
+eyJoaXN0b3J5IjpbLTgzMzMyOTY1LDQ0NzM3MjQ1NSwxMjM0NT
+YxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0
+LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMj
+c2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQx
+MTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OT
+UsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEw
+Mzc4NDY1MTJdfQ==
 -->
