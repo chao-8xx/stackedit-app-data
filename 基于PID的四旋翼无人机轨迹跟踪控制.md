@@ -216,10 +216,10 @@ end
 %% nargin是MATLAB中用来获取函数输入参数个数的内置函数
 
 if nargin > 3
-
-% 跟踪轨迹
 plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
+% 跟踪轨迹
 end
+%% 功能：若输入了参考轨迹 `traj`，则在坐标轴 ax上以黑色虚线绘制参考轨迹。
 
 y_lim_max = ceil(max(position(:,1))) + 2;
 
@@ -326,11 +326,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTkwOTE5OTUsMzYyNzIyODkwLC05OD
-c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
-NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
-ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
-MDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3Mj
-Q1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3
-LDEzNTA5NDI3NzldfQ==
+eyJoaXN0b3J5IjpbMTY3OTAzNjA5OSwzNjI3MjI4OTAsLTk4Nz
+Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
+MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
+wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
+MjI2NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyND
+UyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5Nzcs
+MTM1MDk0Mjc3OV19
 -->
