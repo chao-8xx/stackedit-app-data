@@ -169,8 +169,6 @@ graph TD
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
 
 
-
-
 ```
 function draw_quadrotor_2D(t, position, angle, traj)
 
@@ -192,6 +190,9 @@ fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410
 
 
 ax=axes;
+```matlab
+% 定义坐标轴
+``
 
 axis equal;
 
@@ -313,12 +314,13 @@ drawnow;
 
 end
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyNzcxMDIsLTIyNjI2OTYwNCwtNjcwOD
-I3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4
-MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLT
-ExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2
-NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOTQyNz
-c5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLTE1
-NjI1Mzc1OTZdfQ==
+eyJoaXN0b3J5IjpbMTQ3NTc0NjE2OCwtMjI2MjY5NjA0LC02Nz
+A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
+MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
+wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
+NTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEzNTA5ND
+I3NzksNDkyMDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExODc4Niwt
+MTU2MjUzNzU5Nl19
 -->
