@@ -168,7 +168,9 @@ graph TD
     -   使四旋翼飞行器在二维空间内以圆形轨迹运动。
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
 
-### 
+### 绘制二维四旋翼 视觉跟踪代码实现
+
+![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png)
 
 
 ```matlab
@@ -326,7 +328,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ3MTAwMzk1LC05MzE5MjYwMzYsLTIyNj
+eyJoaXN0b3J5IjpbNTY3MTEyNTI2LC05MzE5MjYwMzYsLTIyNj
 I2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2
 NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LD
 E3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2
