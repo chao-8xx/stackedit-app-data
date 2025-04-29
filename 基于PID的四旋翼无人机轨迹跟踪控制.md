@@ -32,16 +32,18 @@
     
     -   ​**物理意义**：y方向加速度由推力的水平分量产生
     -   ​**关键参数**：
-        -   FFF：旋翼总推力（控制输入）
-        -   ϕ\phiϕ：俯仰角（推力方向控制）
-        -   mmm：四旋翼质量
+        -   F：旋翼总推力（控制输入）
+        -   ϕ\phi：俯仰角（推力方向控制）
+        -   m：四旋翼质量
     -   ​**动力学层级**：平移动力学方程（牛顿第二定律）
+    
 5.  ​​***v˙z​=Fcosϕ/m​−g***
     
     -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
     -   ​**关键参数**：
         -   g：重力加速度（向下作用）
     -   ​**动力学层级**：平移动力学方程（含重力补偿）
+    
 6.  ​***ω˙=−1/J * ​M***
     
     -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
@@ -313,11 +315,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MzUwODIwLC0xMjc2OTQ1MDc3LC0xNj
-M3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1
-NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMi
-wxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIsMTUx
-NTU5OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNz
-Q0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5Nywt
-NTIyNzY5MjEwXX0=
+eyJoaXN0b3J5IjpbLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMT
+YzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAy
+NTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MD
+IsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1
+MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMT
+c0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcs
+LTUyMjc2OTIxMF19
 -->
