@@ -212,7 +212,8 @@ if nargin < 3
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
 return;
 end
-%%功能:若输入参数少于 3 个，打印帮助信息并直接返回。
+%%功能:若输入参数少于 3 个，直接返回。
+
 
 if nargin > 3
 
@@ -327,11 +328,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyNzIyODkwLC05ODc0Njg4MTIsLTE4OT
-Q2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02NzA4Mjcy
-MjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUzMjgwNS
-wtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MCwtMTEz
-ODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0Nz
-kxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3Nzks
-NDkyMDAxNDQ3XX0=
+eyJoaXN0b3J5IjpbLTEzMTc4NDQ0OTAsMzYyNzIyODkwLC05OD
+c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
+NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
+ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
+MDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3Mj
+Q1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3
+LDEzNTA5NDI3NzldfQ==
 -->
