@@ -188,9 +188,9 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %% | 参数名    | 数据类型  | 物理意义                                     %% |
 %% |----------|----------|--------------------------------------------------|
 %% | t        | n×1向量      | 时间序列                                       |
-| position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
-| angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
-| traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
+%% | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
+%% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
+%% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
 
 
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
@@ -199,6 +199,7 @@ ax=axes;
 % 定义坐标轴
 axis equal;
 % 保持纵横比一致
+
 %% 功能解析；
 %% 创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
 %% 定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
@@ -324,11 +325,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjY3NDgyOSw0NDczNzI0NTUsMTIzND
-U2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0
-NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMT
-I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
-MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OT
-k1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0x
-MDM3ODQ2NTEyXX0=
+eyJoaXN0b3J5IjpbMjg3MDgwMTExLDQ0NzM3MjQ1NSwxMjM0NT
+YxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0
+LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMj
+c2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQx
+MTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OT
+UsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEw
+Mzc4NDY1MTJdfQ==
 -->
