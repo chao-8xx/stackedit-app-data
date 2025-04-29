@@ -183,9 +183,9 @@ function draw_quadrotor_2D(t, position, angle, traj)
 
 % traj: (y, z)参考轨迹[n*2]
 
-%% 坐标轴属性设置
+% 坐标轴属性设置
 
-
+%%
 | 参数名    | 数据类型  | 物理意义                                     |
 |----------|----------|--------------------------------------------------|
 | t        | n×1      | 时间序列                                       |
@@ -193,17 +193,15 @@ function draw_quadrotor_2D(t, position, angle, traj)
 | angle    | n×1      | 滚转角 φ（绕 x 轴旋转角度）                     |
 | traj     | n×2      | 参考轨迹的 (y_ref, z_ref) 坐标                    |
 
-
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
-
 
 ax=axes;
 % 定义坐标轴
 
-
 axis equal;
 % 保持纵横比一致
+
 
 if nargin < 3
 
@@ -325,7 +323,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNjk5MTMzNSwtMjI2MjY5NjA0LC02Nz
+eyJoaXN0b3J5IjpbMTU2MDE4ODg5MCwtMjI2MjY5NjA0LC02Nz
 A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
 MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
 wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
