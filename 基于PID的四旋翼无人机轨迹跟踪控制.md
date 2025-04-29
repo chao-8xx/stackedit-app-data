@@ -232,7 +232,9 @@ set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','
 
 'Xlim',[y_lim_min y_lim_max],'Ylim',[z_lim_min z_lim_max],...
 'XTick',y_lim_min:1:y_lim_max,'YTick',z_lim_min:1:z_lim_max);
-%% “XTick = y_lim_min:1:y_lim_max“：将 y 轴刻度设为 1 米间隔，zz
+%% “XTick = y_lim_min:1:y_lim_max“：将 y 轴刻度设为 1 米间隔，z轴同理
+%% “XGrid = 'on', YGrid = 'on'”：显示网格线
+
 %% 坐标标签与标题美化
 title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
 %% 设置标题："2D_Quadrotor"，字体：Times New Roman 并调整字号为12
@@ -326,7 +328,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5ODE1Mzg5LDI4NzA4MDExMSw0NDczNz
+eyJoaXN0b3J5IjpbMTg2OTQ3NTc3LDI4NzA4MDExMSw0NDczNz
 I0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwt
 MTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MD
 gyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMy
