@@ -293,11 +293,14 @@ R = [cos(phi) sin(phi);
 
 % 通过把四旋翼在机体坐标系下的关键点变换到地球坐标系下
 % 用于画四旋翼在地球坐标系下的真实姿态
+%% 齐次变换矩阵
 wHb = [R quadrotor_pos;
 0 0 1];
+
 quadrotor_world = wHb * Quadrotor_Body; 
 % [3x3][3x8]
 quadrotor_atti = quadrotor_world(1:2, :);
+
 % 四旋翼画图
 set(h1,'Xdata',quadrotor_atti(1,[1 2]), 'Ydata',quadrotor_atti(2,[1 2]));
  % 机臂
@@ -318,11 +321,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMjY2MjEyMSwtOTczODk1NzExLC01Nz
-g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
-MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
-Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
-MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
-wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
-MjI2NDkwXX0=
+eyJoaXN0b3J5IjpbMzU0ODQzNzcyLC05NzM4OTU3MTEsLTU3OD
+UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
+LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
+Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
+NCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LD
+EwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAy
+MjY0OTBdfQ==
 -->
