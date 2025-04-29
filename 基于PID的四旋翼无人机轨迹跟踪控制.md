@@ -34,13 +34,13 @@
         -   ϕ\phiϕ：俯仰角（推力方向控制）
         -   mmm：四旋翼质量
     -   ​**动力学层级**：平移动力学方程（牛顿第二定律）
-5.  ​**v˙z=Fcos⁡ϕm−g\dot{v}_z = \frac{F \cos\phi}{m} - gv˙z​=mFcosϕ​−g**
+5.  ​​**v˙z​=mFcosϕ​−g**
     
     -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
     -   ​**关键参数**：
         -   ggg：重力加速度（向下作用）
     -   ​**动力学层级**：平移动力学方程（含重力补偿）
-6.  ​**ω˙=−1JM\dot{\omega} = -\frac{1}{J} Mω˙=−J1​M**
+6.  ​**ω˙=−J1​M**
     
     -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
     -   ​**关键参数**：
@@ -311,11 +311,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODA4NTgyNCwtMTYzNzA5NjQyOSwxMD
-g0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2
-NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNS
-wxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1
-MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nz
-g2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2OTIxMCwt
-NjMxNzUyNzM1XX0=
+eyJoaXN0b3J5IjpbLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMT
+A4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIy
+NjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1Mj
+UsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEz
+NTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExOD
+c4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNTk3LC01MjI3NjkyMTAs
+LTYzMTc1MjczNV19
 -->
