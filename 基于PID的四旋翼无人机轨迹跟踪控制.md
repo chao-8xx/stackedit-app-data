@@ -202,9 +202,8 @@ ax=axes;
 axis equal;
 % 保持纵横比一致
 
--   创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
-    
--   定义坐标轴 `ax`，并设置纵横比一致（axis equal），确保图形不变形。
+%%创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
+%%定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
 
 if nargin < 3
 
@@ -327,7 +326,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjMyNDQyMiwtOTg3NDY4ODEyLC0xOD
+eyJoaXN0b3J5IjpbMTgzMDQ0OTI5NiwtOTg3NDY4ODEyLC0xOD
 k0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3
 MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MD
 UsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTEx
