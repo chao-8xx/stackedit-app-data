@@ -2,10 +2,10 @@
 
 ## 二维笔记说明
 
- ### 1. 展示二维平面四旋翼圆形轨迹跟踪（以其为例）
- ![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png "基于PID的二维平面四旋翼圆形轨迹跟踪")
+ ### 一、展示二维平面四旋翼圆形轨迹跟踪（以其为例）
+![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png "基于PID的二维平面四旋翼圆形轨迹跟踪")
 
-### 2.状态方程解读
+### 二、状态方程解读
 
 ### **状态方程体系**
 
@@ -50,7 +50,7 @@
         -   J：转动惯量
     -   ​**动力学层级**：刚体力学方程（角动量定理）
 
-### 3. 轨迹生成
+### 三、轨迹生成
 
 1. 一般的轨迹都是以正弦波的形式来生成的，即为simulink里的**Sine Wave**模块生成，只需要**Sine Wave正弦波模块**、**Outpart输出模块**、**Mux模块**与**To Workspace模块**，较为简单。
 
@@ -333,11 +333,11 @@ end
 ```
 ### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIxNzgxOTEyLDYzNzMwNjEwNCwtOTczOD
-k1NzExLC01Nzg1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIz
-LDI4NzA4MDExMSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3Mj
-I4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2
-LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMT
-YzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAy
-NTUyOF19
+eyJoaXN0b3J5IjpbMTc2OTI0NzY1NCw2MzczMDYxMDQsLTk3Mz
+g5NTcxMSwtNTc4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcy
+MywyODcwODAxMTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNz
+IyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAz
+NiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLT
+E2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYw
+MjU1MjhdfQ==
 -->
