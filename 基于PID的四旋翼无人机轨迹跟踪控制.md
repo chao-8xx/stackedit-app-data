@@ -202,9 +202,9 @@ ax=axes;
 axis equal;
 % 保持纵横比一致
 
-%%功能解析；
-%%创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
-%%定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
+%% 功能解析；
+%% 创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
+%% 定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
 
 
 if nargin < 3
@@ -212,15 +212,13 @@ if nargin < 3
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
 return;
 end
-%%功能:若输入参数少于 3 个，直接返回。
-
+%% 功能:若输入参数少于 3 个，直接返回。
+%% nargin是MATLAB中用来获取函数输入参数个数的内置函数
 
 if nargin > 3
 
 % 跟踪轨迹
-
 plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
-
 end
 
 y_lim_max = ceil(max(position(:,1))) + 2;
@@ -328,7 +326,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTc4NDQ0OTAsMzYyNzIyODkwLC05OD
+eyJoaXN0b3J5IjpbLTEwNTkwOTE5OTUsMzYyNzIyODkwLC05OD
 c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
 NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
 ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
