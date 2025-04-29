@@ -241,8 +241,8 @@ xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',
 
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 
-Quadrotor.L = 0.5; % 机臂长度
-
+Quadrotor.L = 0.5; 
+% 机臂长度
 Quadrotor.H = 0.2; % 电机高度
 
 Quadrotor.W = 0.15; % 螺旋桨半径
@@ -326,11 +326,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
-Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
-MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
-wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
-MjI2NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyND
-UyNSwxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5Nzcs
-MTM1MDk0Mjc3OV19
+eyJoaXN0b3J5IjpbLTM2Mzk5MjAwMSwxMjM0NTYxMzQzLDM2Mj
+cyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYw
+MzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC
+0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2
+MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0Nj
+gwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIs
+MTUxNTU5OTk3N119
 -->
