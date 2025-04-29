@@ -177,7 +177,7 @@ graph TD
 
 ```matlab
 function draw_quadrotor_2D(t, position, angle, traj)
-%%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置 `position`、滚转角angle和参考轨迹 `traj`
+%%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
 
 % 输入参数：
 
@@ -194,10 +194,10 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %%
 | 参数名    | 数据类型  | 物理意义                                     |
 |----------|----------|--------------------------------------------------|
-| t        | n×1      | 时间序列                                       |
-| position | n×2      | 四旋翼二维位置坐标 (y, z)                       |
-| angle    | n×1      | 滚转角 φ（绕 x 轴旋转角度）                     |
-| traj     | n×2      | 参考轨迹的 (y_ref, z_ref) 坐标                    |
+| t        | n×1向量      | 时间序列                                       |
+| position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
+| angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
+| traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
 
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
@@ -330,7 +330,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzc5OTMyNiwtMTg5NDYzMTM0NCwtOT
+eyJoaXN0b3J5IjpbLTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOT
 MxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0
 NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0ND
 YsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0
