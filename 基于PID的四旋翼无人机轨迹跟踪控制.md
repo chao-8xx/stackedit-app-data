@@ -46,7 +46,7 @@
     -   ​**关键参数**：
         -   M：力矩（控制输入）
         -   J：转动惯量
-    -   ​**动力学层级**：旋转动力学方程（角动量定理）
+    -   ​**动力学层级**：刚体力学方程（角动量定理）
 
 ### 3. 轨迹生成
 
@@ -311,11 +311,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyOD
-YwMjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2
-ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMi
-wxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4
-MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNT
-k3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
-
+eyJoaXN0b3J5IjpbLTE2MzcwOTY0MjksMTA4NDUzMjgwNSwtMz
+Q3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5
+NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNC
+wtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDky
+MDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNz
+U5NiwxMDM1MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0
+NDA5MDU2MTldfQ==
 -->
