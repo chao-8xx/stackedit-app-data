@@ -219,7 +219,7 @@ if nargin > 3
 plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
 % 跟踪轨迹
 end
-%% 功能：若输入了参考轨迹 `traj`，则在坐标轴 ax上以黑色虚线绘制参考轨迹。
+%% 功能：若输入了参考轨迹traj，则在坐标轴ax上以黑色虚线绘制参考轨迹。
 
 y_lim_max = ceil(max(position(:,1))) + 2;
 
@@ -326,7 +326,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3OTAzNjA5OSwzNjI3MjI4OTAsLTk4Nz
+eyJoaXN0b3J5IjpbMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
 MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
 wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
