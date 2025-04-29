@@ -191,7 +191,9 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
 %% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
 --------------------
-
+***************************
+————————————————————————————————————————
+=====================
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
 ax=axes;
@@ -325,11 +327,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDUwNzM2NjMsMTA5MjM5Mjk5MywxNT
-E3NDE5NzIzLDI4NzA4MDExMSw0NDczNzI0NTUsMTIzNDU2MTM0
-MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOT
-MxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0
-NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0ND
-YsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0
-NTA3NDY4MDJdfQ==
+eyJoaXN0b3J5IjpbLTU3ODUzMzkwMiwxMDkyMzkyOTkzLDE1MT
+c0MTk3MjMsMjg3MDgwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQz
+LDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05Mz
+E5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1
+MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0Ni
+wxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1
+MDc0NjgwMl19
 -->
