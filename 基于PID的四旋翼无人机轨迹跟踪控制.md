@@ -11,22 +11,22 @@
 
 ### **状态方程体系**
 
-1.1.  ​**y˙​=vy​**
+1.  ​**​y˙​=vy**
     
-    -   ​**物理意义：y方向位置变化率等于y方向速度
-    -   ​**动力学：运动学方程（位置与速度的关系）
-2.  ​**z˙=vz\dot{z} = v_zz˙=vz​**
+    -   ​**物理意义**：y方向位置变化率等于y方向速度
+    -   ​**动力学层级**：运动学方程（位置与速度的关系）
+2.  ​**z˙=vz​**
     
     -   ​**物理意义**：z方向（垂直方向）位置变化率等于z方向速度
     -   ​**动力学层级**：运动学方程（位置与速度的关系）
-3.  ​**ϕ˙=ω\dot{\phi} = \omegaϕ˙​=ω**
+3.  ​**ϕ˙​=ω**
     
     -   ​**物理意义**：四旋翼俯仰角（绕x轴的旋转角度）变化率等于角速度
     -   ​**动力学层级**：旋转运动学方程（角度与角速度的关系）
 
 ----------
 
-4.  ​**v˙y=Fsin⁡ϕm\dot{v}_y = \frac{F \sin\phi}{m}v˙y​=mFsinϕ​**
+4.  ​**v˙y​=mFsinϕ​​**
     
     -   ​**物理意义**：y方向加速度由推力的水平分量产生
     -   ​**关键参数**：
@@ -311,7 +311,7 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMDMwNTk1NCwtMTYzNzA5NjQyOSwxMD
+eyJoaXN0b3J5IjpbLTMxODA4NTgyNCwtMTYzNzA5NjQyOSwxMD
 g0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2
 NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNS
 wxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1
