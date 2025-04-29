@@ -9,7 +9,43 @@
 
 ### 2.状态方程解读
 
+### **状态方程体系**
 
+1.  ​**y˙​=vy​**y˙   
+    -   ​**物理意义**：y方向位置变化率等于y方向速度
+    -   ​**动力学层级**：运动学方程（位置与速度的关系）
+2.  ​**z˙=vz\dot{z} = v_zz˙=vz​**
+    
+    -   ​**物理意义**：z方向（垂直方向）位置变化率等于z方向速度
+    -   ​**动力学层级**：运动学方程（位置与速度的关系）
+3.  ​**ϕ˙=ω\dot{\phi} = \omegaϕ˙​=ω**
+    
+    -   ​**物理意义**：四旋翼俯仰角（绕x轴的旋转角度）变化率等于角速度
+    -   ​**动力学层级**：旋转运动学方程（角度与角速度的关系）
+
+----------
+
+4.  ​**v˙y=Fsin⁡ϕm\dot{v}_y = \frac{F \sin\phi}{m}v˙y​=mFsinϕ​**
+    
+    -   ​**物理意义**：y方向加速度由推力的水平分量产生
+    -   ​**关键参数**：
+        -   FFF：旋翼总推力（控制输入）
+        -   ϕ\phiϕ：俯仰角（推力方向控制）
+        -   mmm：四旋翼质量
+    -   ​**动力学层级**：平移动力学方程（牛顿第二定律）
+5.  ​**v˙z=Fcos⁡ϕm−g\dot{v}_z = \frac{F \cos\phi}{m} - gv˙z​=mFcosϕ​−g**
+    
+    -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
+    -   ​**关键参数**：
+        -   ggg：重力加速度（向下作用）
+    -   ​**动力学层级**：平移动力学方程（含重力补偿）
+6.  ​**ω˙=−1JM\dot{\omega} = -\frac{1}{J} Mω˙=−J1​M**
+    
+    -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
+    -   ​**关键参数**：
+        -   MMM：力矩（控制输入）
+        -   JJJ：转动惯量
+    -   ​**动力学层级**：旋转动力学方程（角动量定理）
 
 ### 3. 轨迹生成
 
@@ -274,10 +310,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3Mz
-AyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2NzI0
-NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3Ny
-wxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzEx
-MTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MTU5NywtNTIyNzY5Mj
-EwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbLTE3Nzc1MTIyMjQsLTM0NzQxMTQ0NiwxMj
+g2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0
+NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MT
+IsMTUxNTU5OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1
+ODIxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MT
+U5NywtNTIyNzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
+
 -->
