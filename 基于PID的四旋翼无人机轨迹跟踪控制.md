@@ -79,7 +79,7 @@
 
 如下图展示：![轨迹生成 （2）](/imgs/2025-04-29/z0ECQc1znVrJvRlf.png "轨迹生成 （2）")
 
-### 4. PID控制器与二维四旋翼动态系统
+### 四、PID控制器与二维四旋翼动态系统
 
 ### **讲解**
 
@@ -166,7 +166,7 @@ graph TD
     -   使四旋翼飞行器在二维空间内以圆形轨迹运动。
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
 
-### 绘制二维四旋翼 视觉跟踪代码实现
+### 五、绘制二维四旋翼 视觉跟踪代码实现
 
 ![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png "绘制二维四旋翼")
 
@@ -331,13 +331,13 @@ end
 5. 图形更新：通过 set 函数更新图形对象的坐标数据，动态绘制四旋翼姿态和轨迹。
 
 ```
-
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MjgxOTYyMiw2MzczMDYxMDQsLTk3Mz
-g5NTcxMSwtNTc4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcy
-MywyODcwODAxMTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNz
-IyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAz
-NiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLT
-E2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYw
-MjU1MjhdfQ==
+eyJoaXN0b3J5IjpbMjIxNzgxOTEyLDYzNzMwNjEwNCwtOTczOD
+k1NzExLC01Nzg1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIz
+LDI4NzA4MDExMSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3Mj
+I4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2
+LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMT
+YzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAy
+NTUyOF19
 -->
