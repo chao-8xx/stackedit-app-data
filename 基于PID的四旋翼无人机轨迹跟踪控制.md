@@ -11,10 +11,10 @@
 
 ### **状态方程体系**
 
-1.  ​**y˙=vy\dot{y} = v_yy˙​=vy​**
+1.1.  ​**y˙​=vy​**
     
-    -   ​**物理意义**：y方向位置变化率等于y方向速度
-    -   ​**动力学层级**：运动学方程（位置与速度的关系）
+    -   ​**物理意义：y方向位置变化率等于y方向速度
+    -   ​**动力学：运动学方程（位置与速度的关系）
 2.  ​**z˙=vz\dot{z} = v_zz˙=vz​**
     
     -   ​**物理意义**：z方向（垂直方向）位置变化率等于z方向速度
@@ -311,11 +311,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzcwOTY0MjksMTA4NDUzMjgwNSwtMz
-Q3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5
-NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNC
-wtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDky
-MDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNz
-U5NiwxMDM1MDgxNTk3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0
-NDA5MDU2MTldfQ==
+eyJoaXN0b3J5IjpbMTgzMDMwNTk1NCwtMTYzNzA5NjQyOSwxMD
+g0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2
+NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNS
+wxNzI1NjQ3OTE0LC0xMDM3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1
+MDk0Mjc3OSw0OTIwMDE0NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nz
+g2LC0xNTYyNTM3NTk2LDEwMzUwODE1OTcsLTUyMjc2OTIxMCwt
+NjMxNzUyNzM1XX0=
 -->
