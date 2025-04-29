@@ -177,14 +177,10 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
 
 % 输入参数：
-1.
-
- - t: 时间[n*1]
-
-
-% position: (y, z)位置[n*2]
-% angle: 角度[n*1]
-% traj: (y, z)参考轨迹[n*2]
+- t: 时间[n*1]
+- position: (y, z)位置[n*2]
+- angle: 角度[n*1]
+- traj: (y, z)参考轨迹[n*2]
 
  | 参数名    | 数据类型      | 物理意义                                  |
  | t        | n×1向量      | 时间序列                                  |
@@ -205,7 +201,7 @@ axis equal;
 %% 创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
 %% 定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
 
-%% ----------------------------------------------------------------------
+ ----------------------------------------------------------------------
 
 if nargin < 3
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
@@ -337,11 +333,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzExOTA2NjksLTk3Mzg5NTcxMSwtNT
-c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
-MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
-c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
-NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
-ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
-MDIyNjQ5MF19
+eyJoaXN0b3J5IjpbNjM3MzA2MTA0LC05NzM4OTU3MTEsLTU3OD
+UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
+LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
+Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
+NCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LD
+EwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAy
+MjY0OTBdfQ==
 -->
