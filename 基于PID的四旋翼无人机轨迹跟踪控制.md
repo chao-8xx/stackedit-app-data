@@ -168,11 +168,9 @@ graph TD
 
 ### 绘制二维四旋翼 视觉跟踪代码实现
 
-
-![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png)
+![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png )
 
 #### S代码解析
-
 ```matlab
 function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
@@ -326,11 +324,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzQxOTcyMywyODcwODAxMTEsNDQ3Mz
-cyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIs
-LTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02Nz
-A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
-MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
-wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
-NTY0NzkxNF19
+eyJoaXN0b3J5IjpbMzI2NzU5NDcxLDE1MTc0MTk3MjMsMjg3MD
+gwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwt
+OTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNj
+I2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2
+NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LD
+E3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2
+NzI0NTI1XX0=
 -->
