@@ -293,7 +293,10 @@ R = [cos(phi) sin(phi);
 
 % 通过把四旋翼在机体坐标系下的关键点变换到地球坐标系下
 % 用于画四旋翼在地球坐标系下的真实姿态
-%% 详细jie
+%% 详细解析：该矩阵描述的是绕 x轴的旋转（在 y-z 平面内的投影）。当phi为正时，四旋翼向右倾斜。
+-  齐次变换：通过齐次矩阵 `wHb` 将机体坐标系下的点变换到地球坐标系，结合旋转和平移操作。
+    
+-   **动态绘制**：使用 `drawnow` 强制刷新图形窗口，实现动画效果。
 
 %% 齐次变换矩阵
 wHb = [R quadrotor_pos;
@@ -331,11 +334,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwODU0NDQ2NCwtOTczODk1NzExLC01Nz
-g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
-MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
-Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
-MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
-wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
-MjI2NDkwXX0=
+eyJoaXN0b3J5IjpbNzI2ODMxMDk5LC05NzM4OTU3MTEsLTU3OD
+UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
+LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
+Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
+NCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LD
+EwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAy
+MjY0OTBdfQ==
 -->
