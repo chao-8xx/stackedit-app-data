@@ -235,11 +235,10 @@ set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','
 
 %% 坐标标签与标题美化
 title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
-%% 设置标题："2D_Quadrotor"，
+%% 设置标题："2D_Quadrotor"，字体：Times New Roman 并调整字号为12
 xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
-
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
-
+%% 标注x轴与y轴名称为 y(m) 和 z(m)
 Quadrotor.L = 0.5; 
 % 机臂长度（左右对称）
 Quadrotor.H = 0.2;
@@ -326,7 +325,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjI3OTA5OCw0NDczNzI0NTUsMTIzND
+eyJoaXN0b3J5IjpbLTE1NjgzNjI3NSw0NDczNzI0NTUsMTIzND
 U2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0
 NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMT
 I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
