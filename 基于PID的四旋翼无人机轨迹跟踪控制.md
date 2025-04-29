@@ -269,13 +269,16 @@ line = plot(ax,0,0,'-r','LineWidth',2);
 h1 = plot(ax,0,0,'-b.','LineWidth',2,'MarkerSize',2); % 机臂
 h2 = plot(ax,0,0,'-b','LineWidth',2); % 电机1
 h3 = plot(ax,0,0,'-b','LineWidth',2); % 电机2
-
 h4 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨1
-
 h5 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨2
-
 legend("参考轨迹","实际轨迹");
+%% 功能：初始化绘图对象，包括：
+%% ◦ line: 红色实线绘制实际轨迹。
+%% ◦ h1-h5: 蓝色线段绘制机臂、电机和螺旋桨。
+%% ◦ 添加图例区分参考轨迹和实际轨迹。
 
+
+%% ----------------------------------------------------------------------
 for i = 1:1:size(t)
 
 % 获取四旋翼位置和姿态
@@ -322,11 +325,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDMzMTUwOTYsLTk3Mzg5NTcxMSwtNT
-c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
-MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
-c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
-NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
-ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
-MDIyNjQ5MF19
+eyJoaXN0b3J5IjpbLTI3OTQwMTQwNywtOTczODk1NzExLC01Nz
+g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
+MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
+Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
+MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
+wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
+MjI2NDkwXX0=
 -->
