@@ -331,9 +331,9 @@ end
 5. 图形更新：通过 set 函数更新图形对象的坐标数据，动态绘制四旋翼姿态和轨迹。
 
 ```
-### 
+### 六、完整视频展示
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2OTI0NzY1NCw2MzczMDYxMDQsLTk3Mz
+eyJoaXN0b3J5IjpbMTQyNzYxNTI5MCw2MzczMDYxMDQsLTk3Mz
 g5NTcxMSwtNTc4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcy
 MywyODcwODAxMTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNz
 IyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAz
