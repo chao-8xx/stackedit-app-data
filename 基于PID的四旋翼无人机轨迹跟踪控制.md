@@ -11,7 +11,8 @@
 
 ### **状态方程体系**
 
-1.  ​**y˙​=vy​**y˙   
+1.  ​**y˙=vy\dot{y} = v_yy˙​=vy​**
+    
     -   ​**物理意义**：y方向位置变化率等于y方向速度
     -   ​**动力学层级**：运动学方程（位置与速度的关系）
 2.  ​**z˙=vz\dot{z} = v_zz˙=vz​**
@@ -43,8 +44,8 @@
     
     -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
     -   ​**关键参数**：
-        -   MMM：力矩（控制输入）
-        -   JJJ：转动惯量
+        -   M：力矩（控制输入）
+        -   J：转动惯量
     -   ​**动力学层级**：旋转动力学方程（角动量定理）
 
 ### 3. 轨迹生成
@@ -310,11 +311,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc1MTIyMjQsLTM0NzQxMTQ0NiwxMj
-g2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0
-NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEwMzc4NDY1MT
-IsMTUxNTU5OTk3NywxMzUwOTQyNzc5LDQ5MjAwMTQ0NywtMTI1
-ODIxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYsMTAzNTA4MT
-U5NywtNTIyNzY5MjEwLC02MzE3NTI3MzUsNDQwOTA1NjE5XX0=
+eyJoaXN0b3J5IjpbMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyOD
+YwMjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2
+ODAyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMi
+wxNTE1NTk5OTc3LDEzNTA5NDI3NzksNDkyMDAxNDQ3LC0xMjU4
+MjE3NDQ1LDMzMTExODc4NiwtMTU2MjUzNzU5NiwxMDM1MDgxNT
+k3LC01MjI3NjkyMTAsLTYzMTc1MjczNSw0NDA5MDU2MTldfQ==
 
 -->
