@@ -306,27 +306,34 @@ quadrotor_atti = quadrotor_world(1:2, :);
 set(h1,'Xdata',quadrotor_atti(1,[1 2]), 'Ydata',quadrotor_atti(2,[1 2]));
  % 机臂
 set(h2,'Xdata',quadrotor_atti(1,[1 3]), 'Ydata',quadrotor_atti(2,[1 3])); 
-% zuo电机1
+% 左电机
 set(h3,'Xdata',quadrotor_atti(1,[4 2]), 'Ydata',quadrotor_atti(2,[4 2])); 
-% 电机2
+% 右电机
 set(h4,'Xdata',quadrotor_atti(1,[5 6]), 'Ydata',quadrotor_atti(2,[5 6])); 
-% 螺旋桨1
+% 左螺旋桨
 set(h5,'Xdata',quadrotor_atti(1,[7 8]), 'Ydata',quadrotor_atti(2,[7 8]));
-% 螺旋桨2
+% 右螺旋桨
 set(line,'Xdata',position(1:i,1),'Ydata',position(1:i,2)); 
-% 四旋翼轨迹
+% 四旋翼轨迹更新
+
 drawnow;
 
 end
+%% 关键步骤：
+1. 状态获取：提取当前时刻的位置 quadrotor_pos 和滚转角 phi。
+2. 旋转矩阵计算：根据滚转角 phi 生成 2D 旋转矩阵 R，用于姿态变换。
+3. 齐次变换矩阵：将旋转和平移组合为齐次变换矩阵 wHb。
+4. 坐标变换：将机体坐标系下的关键点变换到地球坐标系。
+5. 图形更新：通过 set 函数更新图形对象的坐标数据，动态绘制四旋翼姿态和轨迹。
 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NjgyMjgxNCwtOTczODk1NzExLC01Nz
-g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
-MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
-Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
-MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
-wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
-MjI2NDkwXX0=
+eyJoaXN0b3J5IjpbLTE2MjY3OTEzOTgsLTk3Mzg5NTcxMSwtNT
+c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
+MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
+c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
+NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
+ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
+MDIyNjQ5MF19
 -->
