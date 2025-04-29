@@ -261,7 +261,8 @@ Quadrotor.L-Quadrotor.W Quadrotor.H 1;
 
 -Quadrotor.L+Quadrotor.W Quadrotor.H 1;
 
--Quadrotor.L-Quadrotor.W Quadrotor.H 1 ]'; % 注意这里是转置
+-Quadrotor.L-Quadrotor.W Quadrotor.H 1 ]';
+ % 注意这里是转置
 
 line = plot(ax,0,0,'-r','LineWidth',2); % 四旋翼实际轨迹
 
@@ -323,7 +324,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDE4ODg5MCwtMjI2MjY5NjA0LC02Nz
+eyJoaXN0b3J5IjpbLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02Nz
 A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
 MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
 wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
