@@ -181,8 +181,6 @@ function draw_quadrotor_2D(t, position, angle, traj)
 % position: (y, z)位置[n*2]
 % angle: 角度[n*1]
 % traj: (y, z)参考轨迹[n*2]
-% 坐标轴属性设置
-
 
 %% | 参数名    | 数据类型  | 物理意义                                      |
 %% | t        | n×1向量      | 时间序列                                  |
@@ -191,6 +189,7 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标          |
 %% ----------------------------------------------------------------------
 
+%% 坐标轴属性设置
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
 ax=axes;
@@ -240,6 +239,7 @@ title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
 xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 %% 标注x轴与y轴名称为 y(m) 和 z(m)
+%% ----------------------------------------------------------------------
 
 Quadrotor.L = 0.5; 
 % 机臂长度（左右对称）
@@ -247,7 +247,7 @@ Quadrotor.H = 0.2;
 % 电机相对于机臂的高度
 Quadrotor.W = 0.15; 
 % 螺旋桨半径
-
+%% ----------------------------------------------------------------------
 %% 定义构建四旋翼的关键坐标点
 Quadrotor_Body = [Quadrotor.L 0 1;
 
@@ -326,7 +326,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDY4NzgyNywtOTczODk1NzExLC01Nz
+eyJoaXN0b3J5IjpbLTc2ODM2OTI1NiwtOTczODk1NzExLC01Nz
 g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
 MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
