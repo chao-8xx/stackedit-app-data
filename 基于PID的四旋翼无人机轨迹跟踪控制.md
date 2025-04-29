@@ -333,13 +333,13 @@ end
 ```
 ### 六、完整视频展示
 
-
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114423012263973&bvid=BV1tzGUzPEHj&cid=29701508334&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3ODE3MTgsNjM3MzA2MTA0LC05NzM4OT
-U3MTEsLTU3ODUzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMs
-Mjg3MDgwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMj
-g5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYs
-LTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNj
-M3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1
-NTI4XX0=
+eyJoaXN0b3J5IjpbLTgwNDA2NzUyMSw5ODc4MTcxOCw2MzczMD
+YxMDQsLTk3Mzg5NTcxMSwtNTc4NTMzOTAyLDEwOTIzOTI5OTMs
+MTUxNzQxOTcyMywyODcwODAxMTEsNDQ3MzcyNDU1LDEyMzQ1Nj
+EzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQs
+LTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNz
+Y5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDEx
+NDQ2XX0=
 -->
