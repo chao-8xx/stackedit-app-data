@@ -168,7 +168,7 @@ graph TD
 
 ### 绘制二维四旋翼 视觉跟踪代码实现
 
-![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png )
+![绘制二维四旋翼](/imgs/2025-04-29/ZSj2xe28odsQUay3.png “绘制二维四旋翼”)
 
 #### S代码解析
 ```matlab
@@ -325,7 +325,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3OTQwMTQwNywtOTczODk1NzExLC01Nz
+eyJoaXN0b3J5IjpbMTg4OTQ4OTQyNCwtOTczODk1NzExLC01Nz
 g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
 MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
