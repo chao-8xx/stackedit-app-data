@@ -175,7 +175,7 @@ graph TD
 
 function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
-![输入图片说明](/imgs/2025-04-30/EkpLXY26hRyq2ie9.gif)
+
 % 输入参数：
 % t: 时间[n*1]
 % position: (y, z)位置[n*2]
@@ -202,6 +202,7 @@ axis equal;
 %% 创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
 %% 定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
 
+%% ----------------------------------------------------------------------
 
 if nargin < 3
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
@@ -215,6 +216,7 @@ plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
 % 跟踪轨迹
 end
 %% 功能：若输入了参考轨迹traj，则在坐标轴ax上以黑色虚线绘制参考轨迹。
+%% ----------------------------------------------------------------------
 
 %% 动态调整坐标轴范围
 y_lim_max = ceil(max(position(:,1))) + 2;
@@ -324,7 +326,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDk2ODQ2MSwtOTczODk1NzExLC01Nz
+eyJoaXN0b3J5IjpbLTE0MDY4NzgyNywtOTczODk1NzExLC01Nz
 g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
 MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
