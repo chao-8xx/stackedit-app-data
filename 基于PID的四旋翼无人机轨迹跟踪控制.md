@@ -3,6 +3,7 @@
 ## 二维笔记说明
 
  ### 一、展示二维平面四旋翼圆形轨迹跟踪（以其为例）
+ 
 ![基于PID的二维平面四旋翼圆形轨迹跟踪](/imgs/2025-04-29/2zgJqCdRNayZgQQu.png "基于PID的二维平面四旋翼圆形轨迹跟踪")
 
 ### 二、状态方程解读
@@ -335,11 +336,11 @@ end
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114423012263973&bvid=BV1tzGUzPEHj&cid=29701508334&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDA2NzUyMSw5ODc4MTcxOCw2MzczMD
-YxMDQsLTk3Mzg5NTcxMSwtNTc4NTMzOTAyLDEwOTIzOTI5OTMs
-MTUxNzQxOTcyMywyODcwODAxMTEsNDQ3MzcyNDU1LDEyMzQ1Nj
-EzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQs
-LTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNz
-Y5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDEx
-NDQ2XX0=
+eyJoaXN0b3J5IjpbMjEwODA3NzU1MywtODA0MDY3NTIxLDk4Nz
+gxNzE4LDYzNzMwNjEwNCwtOTczODk1NzExLC01Nzg1MzM5MDIs
+MTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDExMSw0NDczNz
+I0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwt
+MTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MD
+gyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMy
+ODA1XX0=
 -->
