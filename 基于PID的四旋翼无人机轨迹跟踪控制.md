@@ -247,7 +247,7 @@ Quadrotor.H = 0.2;
 % 电机相对于机臂的高度
 Quadrotor.W = 0.15; 
 % 螺旋桨半径
-%% ----------------------------------------------------------------------
+----------------------------------------------------------------------
 %%% 定义构建四旋翼的关键坐标点（机体坐标系）
 Quadrotor_Body = [Quadrotor.L 0 1;
 -Quadrotor.L 0 1;
@@ -259,9 +259,9 @@ Quadrotor.L-Quadrotor.W Quadrotor.H 1;
 -Quadrotor.L-Quadrotor.W Quadrotor.H 1 ]';
 % 注意这里是转置
 %% 1.功能：定义四旋翼在机体坐标系中的关键点（齐次坐标），包括：
-%% ◦ 机臂两端点：(±L, 0)。
-%% ◦ 电机顶部点：(±L, H)。
-%% ◦ 螺旋桨端点：(±L±W, H)。
+◦ 机臂两端点：(±L, 0)。
+◦ 电机顶部点：(±L, H)。
+◦ 螺旋桨端点：(±L±W, H)。
 %% 2.转置：矩阵转置为 3 行 8 列，便于后续齐次变换计算。
 
 line = plot(ax,0,0,'-r','LineWidth',2); 
@@ -273,12 +273,12 @@ h4 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨1
 h5 = plot(ax,0,0,'-b','LineWidth',2); % 螺旋桨2
 legend("参考轨迹","实际轨迹");
 %% 功能：初始化绘图对象，包括：
-%% ◦ line: 红色实线绘制实际轨迹。
-%% ◦ h1-h5: 蓝色线段绘制机臂、电机和螺旋桨。
-%% ◦ 添加图例区分参考轨迹和实际轨迹。
+◦ line: 红色实线绘制实际轨迹。
+◦ h1-h5: 蓝色线段绘制机臂、电机和螺旋桨。
+◦ 添加图例区分参考轨迹和实际轨迹。
 
 
-%% ----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 %% 主循环：逐帧更新四旋翼姿态
 
@@ -333,11 +333,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyMjE1MTQwLC05NzM4OTU3MTEsLTU3OD
-UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
-LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
-Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
-NCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LD
-EwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAy
-MjY0OTBdfQ==
+eyJoaXN0b3J5IjpbLTE5MzIyNTc2MzIsLTk3Mzg5NTcxMSwtNT
+c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
+MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
+c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
+NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0Mj
+ksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTcz
+MDIyNjQ5MF19
 -->
