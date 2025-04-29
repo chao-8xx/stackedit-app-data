@@ -167,14 +167,7 @@ graph TD
 2.  ​**工程实现目标**：
     -   使四旋翼飞行器在二维空间内以圆形轨迹运动。
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
-```markdown
-| 参数名    | 数据类型  | 物理意义                                     |
-|----------|----------|--------------------------------------------------|
-| t        | n×1      | 时间序列                                       |
-| position | n×2      | 四旋翼二维位置坐标 (y, z)                       |
-| angle    | n×1      | 滚转角 φ（绕 x 轴旋转角度）                     |
-| traj     | n×2      | 参考轨迹的 (y_ref, z_ref) 坐标                    |
-```
+
 
 ```matlab
 function draw_quadrotor_2D(t, position, angle, traj)
@@ -192,6 +185,13 @@ function draw_quadrotor_2D(t, position, angle, traj)
 
 %% 坐标轴属性设置
 
+
+| 参数名    | 数据类型  | 物理意义                                     |
+|----------|----------|--------------------------------------------------|
+| t        | n×1      | 时间序列                                       |
+| position | n×2      | 四旋翼二维位置坐标 (y, z)                       |
+| angle    | n×1      | 滚转角 φ（绕 x 轴旋转角度）                     |
+| traj     | n×2      | 参考轨迹的 (y_ref, z_ref) 坐标                    |
 
 
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
@@ -325,7 +325,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDc0NDI4MiwtMjI2MjY5NjA0LC02Nz
+eyJoaXN0b3J5IjpbLTgwNjk5MTMzNSwtMjI2MjY5NjA0LC02Nz
 A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
 MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
 wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
