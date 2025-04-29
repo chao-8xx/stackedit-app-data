@@ -257,8 +257,13 @@ Quadrotor.L+Quadrotor.W Quadrotor.H 1;
 Quadrotor.L-Quadrotor.W Quadrotor.H 1;
 -Quadrotor.L+Quadrotor.W Quadrotor.H 1;
 -Quadrotor.L-Quadrotor.W Quadrotor.H 1 ]';
- % 注意这里是转置
- %% 
+% 注意这里是转置
+%% 功能：定义四旋翼在机体坐标系中的关键点（齐次坐标），包括：
+%% ◦ 机臂两端点：(±L, 0)。
+%% ◦ 电机顶部点：(±L, H)。
+%% ◦ 螺旋桨端点：(±L±W, H)。
+%% 转置：矩阵转置为 3 行 8 列，便于后续齐次变换计算。
+
 line = plot(ax,0,0,'-r','LineWidth',2); % 四旋翼实际轨迹
 
 h1 = plot(ax,0,0,'-b.','LineWidth',2,'MarkerSize',2); % 机臂
@@ -319,7 +324,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwOTI1NTA1NCwtOTczODk1NzExLC01Nz
+eyJoaXN0b3J5IjpbMjExMDg5NzI4NSwtOTczODk1NzExLC01Nz
 g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
 MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
