@@ -180,15 +180,10 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
 
 % 输入参数：
-
 % t: 时间[n*1]
-
 % position: (y, z)位置[n*2]
-
 % angle: 角度[n*1]
-
 % traj: (y, z)参考轨迹[n*2]
-
 % 坐标轴属性设置
 
 %%
@@ -199,12 +194,11 @@ function draw_quadrotor_2D(t, position, angle, traj)
 | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
 | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
 
+
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
-
 ax=axes;
 % 定义坐标轴
-
 axis equal;
 % 保持纵横比一致
 
@@ -330,11 +324,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOT
-MxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0
-NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0ND
-YsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0
-NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0xMDM3OD
-Q2NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMDE0NDcs
-LTEyNTgyMTc0NDVdfQ==
+eyJoaXN0b3J5IjpbMTc5NjEwNzcwMCwtOTg3NDY4ODEyLC0xOD
+k0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3
+MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MD
+UsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTEx
+MzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2ND
+c5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOTQyNzc5
+LDQ5MjAwMTQ0N119
 -->
