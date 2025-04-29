@@ -187,7 +187,7 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %% | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                   |
 %% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                  |
 %% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标          |
-%% ----------------------------------------------------------------------
+ ----------------------------------------------------------------------
 
 %%% 坐标轴属性设置
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
@@ -215,7 +215,7 @@ plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
 % 跟踪轨迹
 end
 %% 功能：若输入了参考轨迹traj，则在坐标轴ax上以黑色虚线绘制参考轨迹。
-%% ----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 %% 动态调整坐标轴范围
 y_lim_max = ceil(max(position(:,1))) + 2;
@@ -239,7 +239,7 @@ title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
 xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 %% 标注x轴与y轴名称为 y(m) 和 z(m)
-%% ----------------------------------------------------------------------
+----------------------------------------------------------------------
 
 Quadrotor.L = 0.5; 
 % 机臂长度（左右对称）
@@ -333,7 +333,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIyNTc2MzIsLTk3Mzg5NTcxMSwtNT
+eyJoaXN0b3J5IjpbLTE5MDAzNDEwNjQsLTk3Mzg5NTcxMSwtNT
 c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
 MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
 c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
