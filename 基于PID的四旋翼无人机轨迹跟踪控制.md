@@ -222,11 +222,9 @@ end
 %% 动态调整坐标轴范围
 y_lim_max = ceil(max(position(:,1))) + 2;
 %% 取四旋翼在 y 轴方向的最大位置值，向上取整后加2，确保显示范围比实际数据最大值略大，避免轨迹紧贴边界。
-%% xu方
+%% 下方减号“-”同理
 y_lim_min = floor(min(position(:,1))) - 2;
-
 z_lim_max = ceil(max(position(:,2))) + 2;
-
 z_lim_min = floor(min(position(:,2))) - 2;
 
 set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','on',...
@@ -327,11 +325,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk4Mzg4MjUyLDQ0NzM3MjQ1NSwxMjM0NT
-YxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0
-LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMj
-c2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQx
-MTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OT
-UsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEw
-Mzc4NDY1MTJdfQ==
+eyJoaXN0b3J5IjpbLTU3MzQzMjA0OCw0NDczNzI0NTUsMTIzND
+U2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0
+NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMT
+I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
+MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OT
+k1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0x
+MDM3ODQ2NTEyXX0=
 -->
