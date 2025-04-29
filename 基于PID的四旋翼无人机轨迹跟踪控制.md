@@ -227,11 +227,9 @@ z_lim_max = ceil(max(position(:,2))) + 2;
 z_lim_min = floor(min(position(:,2))) - 2;
 
 set(ax,'looseinset',get(ax,'tightinset'),'nextplot','add','XGrid','on','YGrid','on',...
-%% `looseinset = get(ax, 'tightinset')`：消除坐标轴与图形窗口之间的多余空白，使绘图区域最大化
+%% “looseinset = get(ax, 'tightinset')”：消除坐标轴与图形窗口之间的多余空白，使绘图区域最大化
+%% “nextplot = 'add'”：允许后续绘图（如轨迹线）叠加在当前坐标轴上，避免覆盖已有内容
 
-3
-
-。
 'Xlim',[y_lim_min y_lim_max],'Ylim',[z_lim_min z_lim_max],...
 
 'XTick',y_lim_min:1:y_lim_max,'YTick',z_lim_min:1:z_lim_max);
@@ -329,11 +327,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxNTExMzEwLDI4NzA4MDExMSw0NDczNz
-I0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwt
-MTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MD
-gyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMy
-ODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC
-0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1
-NjQ3OTE0XX0=
+eyJoaXN0b3J5IjpbLTIxMTAzNDIxMzIsMjg3MDgwMTExLDQ0Nz
+M3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEy
+LC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNj
+cwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1
+MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OT
+AsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3
+MjU2NDc5MTRdfQ==
 -->
