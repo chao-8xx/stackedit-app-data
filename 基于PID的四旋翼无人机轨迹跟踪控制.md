@@ -169,7 +169,7 @@ graph TD
     -   通过PID参数整定（如比例系数K、积分时间time）优化动态响应。
 
 
-```
+```matlab
 function draw_quadrotor_2D(t, position, angle, traj)
 
 
@@ -190,12 +190,12 @@ fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410
 
 
 ax=axes;
-```matlab
 % 定义坐标轴
-``
+
 
 axis equal;
-
+```matlab
+% 保持纵横比一致
 if nargin < 3
 
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
@@ -316,7 +316,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NTc0NjE2OCwtMjI2MjY5NjA0LC02Nz
+eyJoaXN0b3J5IjpbMTQxMjE4MDUzMywtMjI2MjY5NjA0LC02Nz
 A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
 MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
 wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
