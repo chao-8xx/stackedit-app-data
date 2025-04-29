@@ -184,16 +184,14 @@ function draw_quadrotor_2D(t, position, angle, traj)
 % 坐标轴属性设置
 
 
-%% | 参数名    | 数据类型  | 物理意义                                     %% |
-%% |----------|----------|--------------------------------------------------|
+%% | 参数名    | 数据类型  | 物理意义                                     |
+%% |----------|----------|---------------------------------------------|
 %% | t        | n×1向量      | 时间序列                                       |
 %% | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
 %% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
 %% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
---------------------
-***************************
-————————————————————————————————————————
-=====================
+%% --------------------
+
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
 ax=axes;
@@ -327,11 +325,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3ODUzMzkwMiwxMDkyMzkyOTkzLDE1MT
-c0MTk3MjMsMjg3MDgwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQz
-LDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05Mz
-E5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1
-MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0Ni
-wxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1
-MDc0NjgwMl19
+eyJoaXN0b3J5IjpbLTEzNjA3NDUxODQsLTU3ODUzMzkwMiwxMD
+kyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTExLDQ0NzM3MjQ1
+NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xOD
+k0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3
+MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MD
+UsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTEx
+MzgyOTU5OTVdfQ==
 -->
