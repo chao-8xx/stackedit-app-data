@@ -172,6 +172,7 @@ graph TD
 
 #### S代码解析
 ```matlab
+
 function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
 
@@ -189,7 +190,7 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %% | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
 %% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
 %% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
-
+----------
 
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
@@ -324,11 +325,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzI2NzU5NDcxLDE1MTc0MTk3MjMsMjg3MD
-gwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwt
-OTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNj
-I2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2
-NDI5LDEwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LD
-E3MzAyMjY0OTAsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2
-NzI0NTI1XX0=
+eyJoaXN0b3J5IjpbMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4Nz
+A4MDExMSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAs
+LTk4NzQ2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMj
+YyNjk2MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5
+NjQyOSwxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOC
+wxNzMwMjI2NDkwLC0xMTM4Mjk1OTk1LDE0NTA3NDY4MDIsMTE3
+NjcyNDUyNV19
 -->
