@@ -175,7 +175,7 @@ graph TD
 
 function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
-
+![输入图片说明](/imgs/2025-04-30/EkpLXY26hRyq2ie9.gif)
 % 输入参数：
 % t: 时间[n*1]
 % position: (y, z)位置[n*2]
@@ -324,11 +324,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mzg5NTcxMSwtNTc4NTMzOTAyLDEwOT
-IzOTI5OTMsMTUxNzQxOTcyMywyODcwODAxMTEsNDQ3MzcyNDU1
-LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIsLTE4OT
-Q2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02NzA4Mjcy
-MjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUzMjgwNS
-wtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MCwtMTEz
-ODI5NTk5NV19
+eyJoaXN0b3J5IjpbMTY2NDk2ODQ2MSwtOTczODk1NzExLC01Nz
+g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
+MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
+Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
+MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
+wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
+MjI2NDkwXX0=
 -->
