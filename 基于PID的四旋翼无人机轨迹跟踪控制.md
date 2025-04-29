@@ -185,6 +185,12 @@ function draw_quadrotor_2D(t, position, angle, traj)
 
 %% 坐标轴属性设置
 
+|  |  |
+|--|--|
+|  |  |
+
+
+
 fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);
 % 创建独立绘图窗口
 
@@ -194,8 +200,8 @@ ax=axes;
 
 
 axis equal;
-```matlab
 % 保持纵横比一致
+
 if nargin < 3
 
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
@@ -316,11 +322,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjE4MDUzMywtMjI2MjY5NjA0LC02Nz
-A4MjcyMjEsLTEyNzY5NDUwNzcsLTE2MzcwOTY0MjksMTA4NDUz
-MjgwNSwtMzQ3NDExNDQ2LDEyODYwMjU1MjgsMTczMDIyNjQ5MC
-wtMTEzODI5NTk5NSwxNDUwNzQ2ODAyLDExNzY3MjQ1MjUsMTcy
-NTY0NzkxNCwtMTAzNzg0NjUxMiwxNTE1NTk5OTc3LDEzNTA5ND
-I3NzksNDkyMDAxNDQ3LC0xMjU4MjE3NDQ1LDMzMTExODc4Niwt
-MTU2MjUzNzU5Nl19
+eyJoaXN0b3J5IjpbLTE1MTI4MzgzMjAsLTIyNjI2OTYwNCwtNj
+cwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1
+MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OT
+AsLTExMzgyOTU5OTUsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3
+MjU2NDc5MTQsLTEwMzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOT
+QyNzc5LDQ5MjAwMTQ0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYs
+LTE1NjI1Mzc1OTZdfQ==
 -->
