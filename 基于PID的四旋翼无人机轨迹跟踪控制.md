@@ -1,5 +1,3 @@
-
-
 # 基于PID的四旋翼无人机轨迹跟踪控制
 
 ## 二维笔记说明
@@ -221,6 +219,7 @@ plot(ax,traj(:,1),traj(:,2),'--k','LineWidth',2);
 end
 %% 功能：若输入了参考轨迹traj，则在坐标轴ax上以黑色虚线绘制参考轨迹。
 
+%
 y_lim_max = ceil(max(position(:,1))) + 2;
 
 y_lim_min = floor(min(position(:,1))) - 2;
@@ -327,11 +326,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNz
-IyODkwLC05ODc0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAz
-NiwtMjI2MjY5NjA0LC02NzA4MjcyMjEsLTEyNzY5NDUwNzcsLT
-E2MzcwOTY0MjksMTA4NDUzMjgwNSwtMzQ3NDExNDQ2LDEyODYw
-MjU1MjgsMTczMDIyNjQ5MCwtMTEzODI5NTk5NSwxNDUwNzQ2OD
-AyLDExNzY3MjQ1MjUsMTcyNTY0NzkxNCwtMTAzNzg0NjUxMiwx
-NTE1NTk5OTc3XX0=
+eyJoaXN0b3J5IjpbOTY5Nzk0MjM2LDQ0NzM3MjQ1NSwxMjM0NT
+YxMzQzLDM2MjcyMjg5MCwtOTg3NDY4ODEyLC0xODk0NjMxMzQ0
+LC05MzE5MjYwMzYsLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMj
+c2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQx
+MTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OT
+UsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEw
+Mzc4NDY1MTJdfQ==
 -->
