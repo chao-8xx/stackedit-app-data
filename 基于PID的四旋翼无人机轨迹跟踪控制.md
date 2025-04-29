@@ -187,8 +187,7 @@ function draw_quadrotor_2D(t, position, angle, traj)
 
 %% 坐标轴属性设置
 
-fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);```matlab
-% 创建独立绘图窗口
+fig=figure('Name','Quadrotor_2D','NumberTitle','off','Position',[500 250 400 410]);% 创建独立绘图窗口
 
 
 ax=axes;
@@ -314,11 +313,11 @@ drawnow;
 end
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY1NTY0NjcsLTY3MDgyNzIyMSwtMT
-I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
-MTE0NDYsMTI4NjAyNTUyOCwxNzMwMjI2NDkwLC0xMTM4Mjk1OT
-k1LDE0NTA3NDY4MDIsMTE3NjcyNDUyNSwxNzI1NjQ3OTE0LC0x
-MDM3ODQ2NTEyLDE1MTU1OTk5NzcsMTM1MDk0Mjc3OSw0OTIwMD
-E0NDcsLTEyNTgyMTc0NDUsMzMxMTE4Nzg2LC0xNTYyNTM3NTk2
-LDEwMzUwODE1OTddfQ==
+eyJoaXN0b3J5IjpbLTIyNjI2OTYwNCwtNjcwODI3MjIxLC0xMj
+c2OTQ1MDc3LC0xNjM3MDk2NDI5LDEwODQ1MzI4MDUsLTM0NzQx
+MTQ0NiwxMjg2MDI1NTI4LDE3MzAyMjY0OTAsLTExMzgyOTU5OT
+UsMTQ1MDc0NjgwMiwxMTc2NzI0NTI1LDE3MjU2NDc5MTQsLTEw
+Mzc4NDY1MTIsMTUxNTU5OTk3NywxMzUwOTQyNzc5LDQ5MjAwMT
+Q0NywtMTI1ODIxNzQ0NSwzMzExMTg3ODYsLTE1NjI1Mzc1OTYs
+MTAzNTA4MTU5N119
 -->
