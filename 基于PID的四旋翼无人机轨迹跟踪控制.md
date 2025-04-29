@@ -300,12 +300,13 @@ wHb = [R quadrotor_pos;
 quadrotor_world = wHb * Quadrotor_Body; 
 % [3x3][3x8]
 quadrotor_atti = quadrotor_world(1:2, :);
+%% 坐标变换
 
-% 四旋翼画图
+% 四旋翼画图（更新图形对象数据）
 set(h1,'Xdata',quadrotor_atti(1,[1 2]), 'Ydata',quadrotor_atti(2,[1 2]));
  % 机臂
 set(h2,'Xdata',quadrotor_atti(1,[1 3]), 'Ydata',quadrotor_atti(2,[1 3])); 
-% 电机1
+% zuo电机1
 set(h3,'Xdata',quadrotor_atti(1,[4 2]), 'Ydata',quadrotor_atti(2,[4 2])); 
 % 电机2
 set(h4,'Xdata',quadrotor_atti(1,[5 6]), 'Ydata',quadrotor_atti(2,[5 6])); 
@@ -321,11 +322,11 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU0ODQzNzcyLC05NzM4OTU3MTEsLTU3OD
-UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
-LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
-Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
-NCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2NDI5LD
-EwODQ1MzI4MDUsLTM0NzQxMTQ0NiwxMjg2MDI1NTI4LDE3MzAy
-MjY0OTBdfQ==
+eyJoaXN0b3J5IjpbLTk2NjgyMjgxNCwtOTczODk1NzExLC01Nz
+g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
+MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
+Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
+MDQsLTY3MDgyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOS
+wxMDg0NTMyODA1LC0zNDc0MTE0NDYsMTI4NjAyNTUyOCwxNzMw
+MjI2NDkwXX0=
 -->
