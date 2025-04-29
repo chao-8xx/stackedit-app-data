@@ -184,10 +184,10 @@ function draw_quadrotor_2D(t, position, angle, traj)
 % traj: (y, z)参考轨迹[n*2]
 % 坐标轴属性设置
 
-%%
-| 参数名    | 数据类型  | 物理意义                                     |
-|----------|----------|--------------------------------------------------|
-| t        | n×1向量      | 时间序列                                       |
+
+%% | 参数名    | 数据类型  | 物理意义                                     %% |
+%% |----------|----------|--------------------------------------------------|
+%% | t        | n×1向量      | 时间序列                                       |
 | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                       |
 | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                     |
 | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标                    |
@@ -199,14 +199,12 @@ ax=axes;
 % 定义坐标轴
 axis equal;
 % 保持纵横比一致
-
 %% 功能解析；
 %% 创建一个独立的图形窗口，命名为 `Quadrotor_2D`，窗口位置为[500, 250]，大小为400×410像素。
 %% 定义坐标轴ax，并设置纵横比一致（axis equal），确保图形不变形。
 
 
 if nargin < 3
-
 fprintf(" 输入参数：\n\t t: 时间[n*1]\n\t position: (y, z)位置[n*2]\n\t angle: 角度[n*1]\n\t traj: (y, z)参考轨迹[n*2]\n");
 return;
 end
@@ -239,6 +237,7 @@ title(ax,'2D\_Quadrotor','Fontname', 'Times New Roman','FontSize',12);
 xlabel(ax,'y(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 ylabel(ax,'z(m)','interpreter','latex','Fontname', 'Times New Roman','FontSize',12);
 %% 标注x轴与y轴名称为 y(m) 和 z(m)
+
 Quadrotor.L = 0.5; 
 % 机臂长度（左右对称）
 Quadrotor.H = 0.2;
@@ -325,7 +324,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjgzNjI3NSw0NDczNzI0NTUsMTIzND
+eyJoaXN0b3J5IjpbLTgyMjY3NDgyOSw0NDczNzI0NTUsMTIzND
 U2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwtMTg5NDYzMTM0
 NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MDgyNzIyMSwtMT
 I3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMyODA1LC0zNDc0
