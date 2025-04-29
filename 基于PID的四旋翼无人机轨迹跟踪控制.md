@@ -279,14 +279,18 @@ legend("参考轨迹","实际轨迹");
 
 
 %% ----------------------------------------------------------------------
-%% ### **主循环：逐帧更新四旋翼姿态**
+
+%% 主循环：逐帧更新四旋翼姿态
+
 for i = 1:1:size(t)
-% 获取四旋翼位置和姿态
+% 获取当前四旋翼位置和姿态（当前状态state）
 quadrotor_pos = position(i,:)';
 phi=angle(i);
+
 % 2D旋转矩阵
 R = [cos(phi) sin(phi);
 -sin(phi) cos(phi)];
+
 % 通过把四旋翼在机体坐标系下的关键点变换到地球坐标系下
 % 用于画四旋翼在地球坐标系下的真实姿态
 wHb = [R quadrotor_pos;
@@ -314,7 +318,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjU1ODM0NywtOTczODk1NzExLC01Nz
+eyJoaXN0b3J5IjpbMTYxMjY2MjEyMSwtOTczODk1NzExLC01Nz
 g1MzM5MDIsMTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDEx
 MSw0NDczNzI0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4Nz
 Q2ODgxMiwtMTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2
