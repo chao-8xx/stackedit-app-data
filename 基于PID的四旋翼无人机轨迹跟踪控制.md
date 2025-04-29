@@ -177,16 +177,20 @@ function draw_quadrotor_2D(t, position, angle, traj)
 %%定义函数 draw_quadrotor_2D，输入参数包括时间t、位置position、滚转角angle和参考轨迹traj
 
 % 输入参数：
-% t: 时间[n*1]
+1.
+
+ - t: 时间[n*1]
+
+
 % position: (y, z)位置[n*2]
 % angle: 角度[n*1]
 % traj: (y, z)参考轨迹[n*2]
 
-%% | 参数名    | 数据类型  | 物理意义                                      |
-%% | t        | n×1向量      | 时间序列                                  |
-%% | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                   |
-%% | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                  |
-%% | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标          |
+ | 参数名    | 数据类型      | 物理意义                                  |
+ | t        | n×1向量      | 时间序列                                  |
+ | position | n×2矩阵      | 四旋翼二维位置坐标 (y, z)                   |
+ | angle    | n×1向量      | 滚转角 φ（绕 x 轴旋转角度）                  |
+ | traj     | n×2矩阵      | 参考轨迹的 (y_ref, z_ref) 二维坐标          |
  ----------------------------------------------------------------------
 
 %%% 坐标轴属性设置
@@ -333,7 +337,7 @@ end
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDAzNDEwNjQsLTk3Mzg5NTcxMSwtNT
+eyJoaXN0b3J5IjpbLTEwNzExOTA2NjksLTk3Mzg5NTcxMSwtNT
 c4NTMzOTAyLDEwOTIzOTI5OTMsMTUxNzQxOTcyMywyODcwODAx
 MTEsNDQ3MzcyNDU1LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05OD
 c0Njg4MTIsLTE4OTQ2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5
