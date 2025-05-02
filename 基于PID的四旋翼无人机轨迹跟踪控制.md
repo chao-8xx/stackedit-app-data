@@ -1,3 +1,4 @@
+[TOC]
 # 基于PID的四旋翼无人机轨迹跟踪控制
 
 ## 二维笔记说明
@@ -10,24 +11,23 @@
 
 ### **状态方程体系**
 
-1.  *​**​y˙​=vy***
-    
+1.  $$ \dot{y} =vy\dot{y} = v_yy˙= v_y $$
+
     -   ​**物理意义**：y方向位置变化率等于y方向速度
     -   ​**动力学层级**：运动学方程（位置与速度的关系）
     
-2.  *​**z˙=vz​***
+2.  $$ ​\dot{z}=vz\dot{z} = v_zz˙=vz​ $$
     
     -   ​**物理意义**：z方向（垂直方向）位置变化率等于z方向速度
     -   ​**动力学层级**：运动学方程（位置与速度的关系）
     
-3.  *​**ϕ˙​=ω***
-    
+3.  $$ ϕ˙=ω\dot{\phi} = ω $$    
     -   ​**物理意义**：四旋翼俯仰角（绕x轴的旋转角度）变化率等于角速度
     -   ​**动力学层级**：旋转运动学方程（角度与角速度的关系）
 
 ----------
 
-4.  ​***v˙y​=Fsinϕ/m​​***
+4.  ​$$ \dot{v}_y = \frac{F \sin \phi}{m} $$
     
     -   ​**物理意义**：y方向加速度由推力的水平分量产生
     -   ​**关键参数**：
@@ -36,20 +36,20 @@
         -   m：四旋翼质量
     -   ​**动力学层级**：平移动力学方程（牛顿第二定律）
     
-5.  ​​***v˙z​=Fcosϕ/m​−g***
+5.   $$ \dot{v}_z = \frac{F \cos \phi}{m} - g $$
     
-    -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
+   -   ​**物理意义**：z方向加速度由推力的垂直分量减去重力加速度
     -   ​**关键参数**：
         -   g：重力加速度（向下作用）
-    -   ​**动力学层级**：平移动力学方程（含重力补偿）
+   -   ​**动力学层级**：平移动力学方程（含重力补偿）
     
-6.  ​***ω˙=−1/J * ​M***
+6.   $$ \dot{v}_z = \frac{F \cos \phi}{m} - g $$
     
-    -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
+   -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
     -   ​**关键参数**：
         -   M：力矩（控制输入）
         -   J：转动惯量
-    -   ​**动力学层级**：刚体力学方程（角动量定理）
+   -   ​**动力学层级**：旋转动力学方程（角动量定理）
 
 ### 三、轨迹生成
 
@@ -336,11 +336,11 @@ end
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114423012263973&bvid=BV1tzGUzPEHj&cid=29701508334&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwODA3NzU1MywtODA0MDY3NTIxLDk4Nz
-gxNzE4LDYzNzMwNjEwNCwtOTczODk1NzExLC01Nzg1MzM5MDIs
-MTA5MjM5Mjk5MywxNTE3NDE5NzIzLDI4NzA4MDExMSw0NDczNz
-I0NTUsMTIzNDU2MTM0MywzNjI3MjI4OTAsLTk4NzQ2ODgxMiwt
-MTg5NDYzMTM0NCwtOTMxOTI2MDM2LC0yMjYyNjk2MDQsLTY3MD
-gyNzIyMSwtMTI3Njk0NTA3NywtMTYzNzA5NjQyOSwxMDg0NTMy
-ODA1XX0=
+eyJoaXN0b3J5IjpbMTU4MDkxNTk2MSwyMTA4MDc3NTUzLC04MD
+QwNjc1MjEsOTg3ODE3MTgsNjM3MzA2MTA0LC05NzM4OTU3MTEs
+LTU3ODUzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MD
+gwMTExLDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwt
+OTg3NDY4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNj
+I2OTYwNCwtNjcwODI3MjIxLC0xMjc2OTQ1MDc3LC0xNjM3MDk2
+NDI5XX0=
 -->
