@@ -43,7 +43,7 @@
         -   g：重力加速度（向下作用）
    -   ​**动力学层级**：平移动力学方程（含重力补偿）
     
-6.   $$ \dot{v}_z = \frac{F \cos \phi}{m} - g $$
+6.   $$ \dot{\omega} = -\frac{1}{J} M $$
     
    -   ​**物理意义**：角加速度由力矩驱动，负号表示力矩方向与旋转方向定义相反
     -   ​**关键参数**：
@@ -336,11 +336,11 @@ end
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114423012263973&bvid=BV1tzGUzPEHj&cid=29701508334&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MDkxNTk2MSwtMTMzODAyMzQxNiwxNT
-gwOTE1OTYxLDIxMDgwNzc1NTMsLTgwNDA2NzUyMSw5ODc4MTcx
-OCw2MzczMDYxMDQsLTk3Mzg5NTcxMSwtNTc4NTMzOTAyLDEwOT
-IzOTI5OTMsMTUxNzQxOTcyMywyODcwODAxMTEsNDQ3MzcyNDU1
-LDEyMzQ1NjEzNDMsMzYyNzIyODkwLC05ODc0Njg4MTIsLTE4OT
-Q2MzEzNDQsLTkzMTkyNjAzNiwtMjI2MjY5NjA0LC02NzA4Mjcy
-MjFdfQ==
+eyJoaXN0b3J5IjpbMzQyNDc2OTU3LDE1ODA5MTU5NjEsLTEzMz
+gwMjM0MTYsMTU4MDkxNTk2MSwyMTA4MDc3NTUzLC04MDQwNjc1
+MjEsOTg3ODE3MTgsNjM3MzA2MTA0LC05NzM4OTU3MTEsLTU3OD
+UzMzkwMiwxMDkyMzkyOTkzLDE1MTc0MTk3MjMsMjg3MDgwMTEx
+LDQ0NzM3MjQ1NSwxMjM0NTYxMzQzLDM2MjcyMjg5MCwtOTg3ND
+Y4ODEyLC0xODk0NjMxMzQ0LC05MzE5MjYwMzYsLTIyNjI2OTYw
+NF19
 -->
